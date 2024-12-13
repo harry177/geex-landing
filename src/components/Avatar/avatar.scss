@@ -1,0 +1,21 @@
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-small {
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+}
+
+.avatar-big {
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+}
+
+.avatar-outlined {
+  border: 1px solid #ffffff;
+}

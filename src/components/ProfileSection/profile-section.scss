@@ -1,0 +1,105 @@
+.profile__image-container {
+  position: relative;
+  left: -20px;
+  top: -28px;
+  width: calc(100% + 40px);
+  height: 140px;
+  background: linear-gradient(to right, #09043e, #29208b);
+}
+
+.profile-logo {
+  position: absolute;
+  left: 20px;
+  top: 80px;
+  width: 140px;
+  height: 140px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 79%;
+    top: 79%;
+    background-image: url("country-flag.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.profile__info-container {
+  margin-top: 72px;
+}
+
+.profile__title-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-title {
+  font-weight: 533;
+  font-size: 30px;
+  text-align: left;
+  letter-spacing: -1%;
+  margin: 0px;
+}
+
+.profile__title-checkmark {
+  width: 24px;
+  height: 24px;
+  background-image: url("title-checkmark.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.profile__params-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #9395b8;
+  font-weight: 548;
+  font-size: 14px;
+  letter-spacing: -0.05em;
+}
+
+.location-icon {
+  margin-left: -1px;
+}
+
+.profile__grey-dot {
+  width: 3px;
+  height: 3px;
+  background-color: #cccfda;
+}
+
+.profile__users-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.profile__avatar-container {
+  position: relative;
+  display: flex;
+}
+
+.profile__avatar-container img {
+  position: relative;
+  margin-left: -9px;
+  z-index: 1;
+}
+
+.profile__avatar-container img:first-child {
+  margin-left: 0;
+  z-index: 1;
+}
+
+.profile__avatar-container img:nth-child(2) {
+  z-index: 2;
+}
+
+.profile__avatar-container img:nth-child(3) {
+  z-index: 3;
+}
