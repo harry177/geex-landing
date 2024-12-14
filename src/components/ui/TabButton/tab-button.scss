@@ -1,0 +1,61 @@
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  color: #7b7ea5;
+  background-color: transparent;
+  font-weight: 548;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  border-bottom: 1px solid #eef0f7;
+
+  &:hover {
+    color: #9395b8;
+  }
+
+  &:active {
+    color: #353754;
+  }
+
+  &:disabled {
+    color: #cccfda;
+  }
+}
+
+.tab-button__static {
+  color: #7b7ea5;
+  border-bottom: 1px solid #eef0f7;
+
+  &:hover {
+    color: #9395b8;
+  }
+
+  &:active {
+    color: #353754;
+  }
+
+  &:disabled {
+    color: #cccfda;
+  }
+}
+
+.tab-button__active {
+  color: #06082c;
+  border-bottom: 2px solid #06082c;
+
+  &:hover {
+    color: #7b7ea5;
+    border-bottom: 2px solid #7b7ea5;
+  }
+
+  &:active {
+    color: #03051c;
+    border-bottom: 2px solid #03051c;
+  }
+
+  &:disabled {
+    color: #cccfda;
+    border-bottom: 2px solid #cccfda;
+  }
+}

@@ -40,8 +40,9 @@
 .profile-title {
   font-weight: 533;
   font-size: 30px;
+  line-height: 32px;
   text-align: left;
-  letter-spacing: -1%;
+  letter-spacing: 0.2px;
   margin: 0px;
 }
 
@@ -55,13 +56,10 @@
 }
 
 .profile__params-container {
-  display: flex;
-  align-items: center;
-  gap: 6px;
   color: #9395b8;
   font-weight: 548;
   font-size: 14px;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.5px;
 }
 
 .location-icon {
@@ -74,32 +72,96 @@
   background-color: #cccfda;
 }
 
-.profile__users-container {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
 .profile__avatar-container {
   position: relative;
-  display: flex;
+
+  img {
+    position: relative;
+    margin-left: -9px;
+    z-index: 1;
+
+    &:nth-child(1) {
+      margin-left: 0;
+      z-index: 1;
+    }
+
+    &:nth-child(2) {
+      z-index: 2;
+    }
+
+    &:nth-child(3) {
+      z-index: 3;
+    }
+  }
 }
 
-.profile__avatar-container img {
-  position: relative;
-  margin-left: -9px;
-  z-index: 1;
+.profile__statistics-container {
+  p {
+    margin: 0px;
+  }
 }
 
-.profile__avatar-container img:first-child {
-  margin-left: 0;
-  z-index: 1;
+.profile__statistics-container__section {
+  font-size: 14px;
+  font-weight: 548;
+  letter-spacing: -0.5px;
+
+  p {
+    &:nth-child(1) {
+      color: #06082c;
+    }
+
+    &:nth-child(2) {
+      color: #9395b8;
+    }
+  }
 }
 
-.profile__avatar-container img:nth-child(2) {
-  z-index: 2;
+.profile__medal-container {
+  margin-top: 28px;
 }
 
-.profile__avatar-container img:nth-child(3) {
-  z-index: 3;
+.profile__medal-container__section {
+  width: 54px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.1px;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f8f8f9;
+
+  p {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #939499;
+  }
+}
+
+.profile-medal {
+  width: 12px;
+  height: 12px;
+  border-radius: 20px;
+}
+
+.medal-gold {
+  background: linear-gradient(to left, #be823b, #d0a461, #fed5a5);
+}
+
+.medal-silver {
+  background: linear-gradient(to left, #878788, #939499, #bfc0c5);
+}
+
+.medal-bronze {
+  background: linear-gradient(to left, #74391d, #c46236, #ff9b67);
+}
+
+.profile__button-container {
+  margin-top: 40px;
+}
+
+.profile__tabs-container {
+  margin-top: 40px;
 }
