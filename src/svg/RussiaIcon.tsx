@@ -7,7 +7,7 @@ export const RussiaIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_10750_5964)">
+      <g clipPath="url(#clip0_10750_5964)">
         <path
           d="M17.7778 0H2.22222C0.995 0 0 1.194 0 2.66667V5.33333H20V2.66667C20 1.194 19.005 0 17.7778 0Z"
           fill="#EEEEEE"

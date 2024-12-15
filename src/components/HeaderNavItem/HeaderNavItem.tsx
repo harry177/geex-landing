@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 interface HeaderNavItemProps {
   page: string;
@@ -13,13 +14,15 @@ export const HeaderNavItem = ({
   isActive,
   handleNavItemClick,
 }: HeaderNavItemProps) => (
-  <li
-    className={`nav-list__item ${
-      isActive ? "nav-list__item-active" : "nav-list__item-static"
-    }`}
-    onClick={handleNavItemClick}
-  >
-    {typeof icon === "function" && icon(isActive ? "#06082c" : "#9395b8")}
-    <p>{page}</p>
-  </li>
+  <Link to="/">
+    <li
+      className={`nav-list__item ${
+        isActive ? "nav-list__item-active" : "nav-list__item-static"
+      }`}
+      onClick={handleNavItemClick}
+    >
+      {typeof icon === "function" && icon(isActive ? "#06082c" : "#9395b8")}
+      <p>{page}</p>
+    </li>
+  </Link>
 );

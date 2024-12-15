@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Flex } from "../ui/Flex/Flex";
-import { languageData, navData, userData } from "./data";
-import "./header.scss";
+import { Link } from "react-router-dom";
 import { HeaderNavItem } from "../HeaderNavItem/HeaderNavItem";
 import { Dropdown } from "../ui/Dropdown/Dropdown";
 import { Avatar } from "../ui/Avatar/Avatar";
+import { Flex } from "../ui/Flex/Flex";
+import { languageData, navData, userData } from "./data";
+import "./header.scss";
 
 export const Header = () => {
   const [activePage, setActivePage] = useState(0);
@@ -16,9 +17,11 @@ export const Header = () => {
   return (
     <header className="header">
       <Flex className="header-container">
-        <Flex justify="center" align="center" className="logo-box">
-          <img src="logo.svg"></img>
-        </Flex>
+        <Link to="/">
+          <Flex justify="center" align="center" className="logo-box">
+            <img src="logo.svg"></img>
+          </Flex>
+        </Link>
         <nav>
           <ul className="nav-list">
             {Array.from(navData).map(({ page, icon }, index) => (
