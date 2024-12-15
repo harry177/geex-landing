@@ -19,7 +19,7 @@ export const HomePage = () => {
           </section>
         </div>
         <div className="content-right">
-          <section className="section-two"></section>
+          <section className="section-two" style={{backgroundColor: "#ffffff"}}></section>
           <section className="section-two"></section>
           <section className="section-two"></section>
         </div>

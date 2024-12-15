@@ -24,11 +24,15 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
           <img src="profile-logo.png"></img>
         </div>
       </div>
+      <div className="rating-box">
+        <img src="green-up-arrow.svg"></img>
+        <span>№2</span>
+      </div>
       <div className="profile__info-container">
         <Flex align="center" gap="8px" className="profile__title-container">
-          <h2 className="profile-title">
+          <h1 className="profile-title">
             Cпортивная Организация Алтайского Края
-          </h2>
+          </h1>
           <div className="profile__title-checkmark"></div>
         </Flex>
         <Flex align="center" gap="6px" className="profile__params-container">
@@ -122,6 +126,7 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
               name={item}
               isActive={activeTab === index}
               onClick={() => handleTabClick(index, item)}
+              className="profile__tab-button"
             />
           )
         )}

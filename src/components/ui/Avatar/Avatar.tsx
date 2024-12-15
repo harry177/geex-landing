@@ -1,12 +1,12 @@
 import "./avatar.scss";
 
 interface AvatarProps {
-  size: string;
-  range: boolean;
   image: string;
+  size?: string;
+  range?: boolean;
 }
 
-export const Avatar = ({ size, range, image }: AvatarProps) => {
+export const Avatar = ({ image, size, range }: AvatarProps) => {
   return (
     <img
       src={image}
