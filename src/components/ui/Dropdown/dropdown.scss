@@ -17,8 +17,6 @@
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  border-radius: 18px;
-  padding: 8px 12px 0px 12px;
   font-weight: 548;
   font-size: 14px;
   letter-spacing: -0.5px;
@@ -33,12 +31,7 @@
   }
 
   li {
-    color: #9395b8;
     cursor: pointer;
-
-    &:hover {
-      color: #353754;
-    }
   }
 }
 

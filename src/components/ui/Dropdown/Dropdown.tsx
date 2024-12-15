@@ -5,7 +5,8 @@ interface DropdownProps {
   label?: string;
   items: { section?: string; icon?: (color: string) => ReactNode }[];
   width?: string;
-  dispatchedIcon?: boolean;
+  dispatchedContent?: boolean;
+  menuHeader?: boolean;
   children?: ReactNode;
   rootClassName?: string;
   menuClassName?: string;
@@ -15,7 +16,8 @@ interface DropdownProps {
 export const Dropdown = ({
   label,
   items,
-  dispatchedIcon,
+  dispatchedContent,
+  menuHeader,
   children,
   rootClassName,
   menuClassName,
@@ -65,9 +67,12 @@ export const Dropdown = ({
         className={`dropdown-root ${rootClassName}`}
         onClick={toggleDropdown}
       >
-        {dispatchedIcon &&
-          items[selectedItem].icon &&
-          items[selectedItem].icon("")}
+        {dispatchedContent && items[selectedItem].icon && (
+          <>
+            {items[selectedItem].icon("")}
+            {items[selectedItem].section}
+          </>
+        )}
         {children}
         <div className="chevron-box">
           <img src={`${isOpen ? "chevron-up.svg" : "chevron-down.svg"}`}></img>
@@ -75,10 +80,12 @@ export const Dropdown = ({
       </div>
       {isOpen && (
         <div className={`dropdown-menu ${menuClassName}`}>
-          <div className="dropdown-menu__header">
-            {children}
-            {label && <p>{label}</p>}
-          </div>
+          {menuHeader && (
+            <div className="dropdown-menu__header">
+              {children}
+              {label && <p>{label}</p>}
+            </div>
+          )}
           <ul>
             {items.map((item, index) => (
               <li
