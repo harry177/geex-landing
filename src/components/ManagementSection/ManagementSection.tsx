@@ -10,7 +10,7 @@ export const ManagementSection = () => {
       <Flex column align="flex-start" className="gap-24">
         <Flex justify="space-between" align="center" className="w-full">
           <h3 className="section-title">Руководство</h3>
-          <ForwardBox name="Смотреть все" url="/" />
+          <ForwardBox name="Смотреть все" url="/management" />
         </Flex>
         <ul className="management-list">
           {managementData.map((item, index) => (

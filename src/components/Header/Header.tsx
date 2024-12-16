@@ -24,11 +24,12 @@ export const Header = () => {
         </Link>
         <nav>
           <ul className="nav-list">
-            {Array.from(navData).map(({ page, icon }, index) => (
+            {navData.map(({ page, icon, url }, index) => (
               <HeaderNavItem
                 key={index}
                 page={page}
                 icon={icon}
+                url={url}
                 isActive={activePage === index}
                 handleNavItemClick={() => handleNavItemClick(index)}
               />

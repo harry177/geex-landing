@@ -25,7 +25,7 @@ export const SportsmenSection = () => {
       <Flex column align="flex-start" className="gap-24">
         <Flex justify="space-between" align="center" className="w-full">
           <h3 className="section-title">Спортсмены</h3>
-          <ForwardBox name="Смотреть все" url="/" />
+          <ForwardBox name="Смотреть все" url="/sportsmen" />
         </Flex>
         <Flex className="gap-16">
           {Array.from([{ name: "Мужчины" }, { name: "Женщины" }]).map(

@@ -28,7 +28,7 @@ export const Carousel = ({ data }: { data: CarouselDataTypes[] }) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <ForwardBox name="Смотреть все" url="/" className="carousel__forward-box"/>
+      <ForwardBox name="Смотреть все" url="/streams" className="carousel__forward-box"/>
     </div>
   );
 };

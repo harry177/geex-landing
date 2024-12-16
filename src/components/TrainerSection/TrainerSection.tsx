@@ -11,7 +11,7 @@ export const TrainerSection = () => {
       <Flex column align="flex-start" className="gap-24">
         <Flex justify="space-between" align="center" className="w-full">
           <h3 className="section-title">Тренеры</h3>
-          <ForwardBox name="Смотреть всех" url="/" />
+          <ForwardBox name="Смотреть всех" url="/trainers" />
         </Flex>
         <ul className="trainer-list">
           {trainerData.map((item, index) =>
