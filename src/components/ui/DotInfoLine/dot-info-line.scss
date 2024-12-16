@@ -1,0 +1,35 @@
+.dot-info-line__container {
+  display: flex;
+  align-items: center;
+}
+
+.dot-info-line__content {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 548;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+}
+
+.grey-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+}
+
+.dot-line__dark {
+  color: #7b7ea5;
+}
+
+.dot-line__light {
+  color: #9395b8;
+}
+
+.dot-color__dark {
+  background-color: #7b7ea5;
+}
+
+.dot-color__light {
+  background-color: #9395b8;
+}

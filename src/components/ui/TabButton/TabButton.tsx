@@ -3,6 +3,7 @@ import "./tab-button.scss";
 interface TabButton {
   className?: string;
   name?: string;
+  amount?: number;
   isActive?: boolean;
   onClick?: () => void;
 }
@@ -10,6 +11,7 @@ interface TabButton {
 export const TabButton = ({
   className,
   name,
+  amount,
   isActive,
   onClick,
 }: TabButton) => {
@@ -20,7 +22,8 @@ export const TabButton = ({
       }`}
       onClick={onClick}
     >
-      {name}
+      {name && <p>{name}</p>}
+      {amount && <p>{amount}</p>}
     </button>
   );
 };

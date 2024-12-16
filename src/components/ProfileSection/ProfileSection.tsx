@@ -28,7 +28,7 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
         <img src="green-up-arrow.svg"></img>
         <span>№2</span>
       </div>
-      <div className="profile__info-container">
+      <Flex column gap="16px" className="profile__info-container">
         <Flex align="center" gap="8px" className="profile__title-container">
           <h1 className="profile-title">
             Cпортивная Организация Алтайского Края
@@ -112,7 +112,7 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
             <p className="profile__medal-number">19</p>
           </Flex>
         </Flex>
-      </div>
+      </Flex>
       <Flex gap="10px" className="profile__button-container">
         <Button variant="primary">Подписаться</Button>
         <Button variant="secondary">Подробнее</Button>

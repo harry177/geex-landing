@@ -1,0 +1,56 @@
+.comp-article__image {
+  width: 180px;
+  height: 120px;
+}
+
+.avatar-container {
+  position: relative;
+
+  img {
+    position: relative;
+    margin-left: -9px;
+    z-index: 1;
+
+    &:nth-child(1) {
+      margin-left: 0;
+      z-index: 1;
+    }
+
+    &:nth-child(2) {
+      z-index: 2;
+    }
+
+    &:nth-child(3) {
+      z-index: 3;
+    }
+  }
+}
+
+.comp-article__text {
+  font-weight: 548;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #06082c;
+}
+
+.comp-article__members {
+  font-weight: 548;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+
+  p {
+    margin: 0;
+
+    &:nth-child(1) {
+      color: #06082c;
+    }
+
+    &:nth-child(2) {
+      color: #9395b8;
+    }
+  }
+}
+
+.comp-article__buttons {
+  margin-top: 16px;
+}
