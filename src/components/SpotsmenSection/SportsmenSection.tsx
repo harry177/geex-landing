@@ -59,7 +59,7 @@ export const SportsmenSection = () => {
         <ul className="sportsmen-list">
           {sportsmenData.map((item, index) =>
             index === 0 ? (
-              <Flex column className="gap-20">
+              <Flex key={index} column className="gap-20">
                 <WinnerItem
                   name={item.name}
                   position={item.position}

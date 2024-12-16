@@ -1,0 +1,28 @@
+.trainer-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #9395b8;
+}
+
+.trainer-list__header {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.trainer-content {
+  width: 160px;
+}
+
+.trainer-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
