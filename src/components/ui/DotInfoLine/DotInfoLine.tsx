@@ -26,7 +26,7 @@ export const DotInfoLine = ({ data, gap }: DotInfoLineProps) => {
           {item.amount}
           {item.content}
         </div>,
-        index < data.length - 1 && (
+        index < data.length - 1 && data[index + 1].content && (
           <div
             key={`divider-${index}`}
             className={`grey-dot ${
