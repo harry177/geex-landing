@@ -21,18 +21,34 @@ const medalClassMap = {
 
 export const Avatar = ({ image, size, range, medal }: AvatarProps) => {
   return (
-    <div className={medalClassMap[medal as keyof MedalMapTypes]}>
-      <img
-        src={image}
-        alt="User avatar"
-        className={`${
-          size === "small"
-            ? "avatar-small"
-            : size === "xl"
-            ? "avatar-xl"
-            : "avatar-big"
-        } ${range ? "avatar-outlined" : ""} avatar`}
-      />
-    </div>
+    <>
+      {range ? (
+        <img
+          src={image}
+          alt="User avatar"
+          className={`${
+            size === "small"
+              ? "avatar-small"
+              : size === "xl"
+              ? "avatar-xl"
+              : "avatar-big"
+          } ${range ? "avatar-outlined" : ""} avatar`}
+        />
+      ) : (
+        <div className={medalClassMap[medal as keyof MedalMapTypes]}>
+          <img
+            src={image}
+            alt="User avatar"
+            className={`${
+              size === "small"
+                ? "avatar-small"
+                : size === "xl"
+                ? "avatar-xl"
+                : "avatar-big"
+            } ${range ? "avatar-outlined" : ""} avatar`}
+          />
+        </div>
+      )}
+    </>
   );
 };
