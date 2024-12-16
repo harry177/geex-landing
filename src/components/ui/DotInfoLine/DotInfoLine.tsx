@@ -1,5 +1,11 @@
-import { InfoLineTypes } from "../../CompetitionSection/data";
 import "./dot-info-line.scss";
+
+export interface InfoLineTypes {
+  content?: string;
+  icon?: string;
+  amount?: number;
+  color?: "light" | "dark";
+}
 
 interface DotInfoLineProps {
   data: InfoLineTypes[];

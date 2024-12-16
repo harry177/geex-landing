@@ -1,0 +1,39 @@
+.carousel-item {
+  width: 280px;
+  height: 289px;
+  cursor: pointer;
+}
+
+.carousel-item__image {
+  border-radius: 14px;
+}
+
+.carousel-item__title-box {
+  height: 52px;
+  overflow-y: hidden;
+
+  h4 {
+    margin: 0;
+    height: fit-content;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: -0.7px;
+    line-height: 26px;
+    text-align: left;
+  }
+}
+
+.carousel-item__company-image {
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-item__company-name {
+  height: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  color: #353754;
+  overflow-x: hidden;
+}

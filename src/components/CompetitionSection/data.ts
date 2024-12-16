@@ -1,10 +1,4 @@
-export interface InfoLineTypes {
-  content?: string;
-  icon?: string;
-  amount?: number;
-  color?: "light" | "dark";
-}
-
+import { InfoLineTypes } from "../ui/DotInfoLine/DotInfoLine";
 export interface CompetitionArticleProps {
   image: string;
   text: string;

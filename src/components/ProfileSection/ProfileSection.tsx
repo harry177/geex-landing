@@ -4,6 +4,8 @@ import { Button } from "../ui/Button/Button";
 import { Flex } from "../ui/Flex/Flex";
 import { TabButton } from "../ui/TabButton/TabButton";
 import "./profile-section.scss";
+import { DotInfoLine } from "../ui/DotInfoLine/DotInfoLine";
+import { profileInfoLine } from "./data";
 
 interface ProfileSectionProps {
   onTabChange: (tabName: string) => void;
@@ -35,16 +37,7 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
           </h1>
           <div className="profile__title-checkmark"></div>
         </Flex>
-        <Flex align="center" gap="6px" className="profile__params-container">
-          <img src="location-icon.svg" className="location-icon"></img>
-          <p>Алтайский край</p>
-          <div className="profile__grey-dot"></div>
-          <p>Грэпплинг</p>
-          <div className="profile__grey-dot"></div>
-          <p>Греко-римская борьба</p>
-          <div className="profile__grey-dot"></div>
-          <p>Пляжная борьба</p>
-        </Flex>
+        <DotInfoLine data={profileInfoLine} gap={6} />
         <Flex
           align="center"
           gap="6px"

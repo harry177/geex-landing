@@ -2,8 +2,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 import "./carousel.scss";
+import { CarouselDataTypes } from "../StreamSection/data";
+import { CarouselItem } from "../CarouselItem/CarouselItem";
 
-export const HeroCarousel = () => {
+export const Carousel = ({ data }: { data: CarouselDataTypes[] }) => {
   return (
     <div className="carousel">
       <Swiper
@@ -14,10 +16,15 @@ export const HeroCarousel = () => {
         watchOverflow
         style={{ height: "100%" }}
       >
-        {Array.from([1, 2, 3, 4, 5]).map((item, index) => (
-          <SwiperSlide
-            key={index}
-          ></SwiperSlide>
+        {data.map((item, index) => (
+          <SwiperSlide key={index}>
+            <CarouselItem
+              image={item.image}
+              title={item.title}
+              banner={item.banner}
+              company={item.company}
+            />
+          </SwiperSlide>
         ))}
       </Swiper>
     </div>
