@@ -1,0 +1,52 @@
+.winner-item {
+  position: relative;
+  width: 100%;
+  height: 137px;
+  border-radius: 15px;
+  padding: 16px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.winner-item__red {
+  background: linear-gradient(to bottom, #330000, #830b00);
+}
+
+.winner-item__blue {
+  background: linear-gradient(to bottom, #09043e, #29208b);
+}
+
+.winner-item__number-one {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 116px;
+  height: 66px;
+  font-weight: 600;
+  font-size: 70px;
+  letter-spacing: -0.5px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.winner-item__rating {
+  font-weight: 548;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.winner-item__name {
+  font-weight: 548;
+  font-size: 16px;
+}
+
+.winner-item__position {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break;
+}

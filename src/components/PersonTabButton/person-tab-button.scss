@@ -1,0 +1,21 @@
+.person__tab-button {
+  display: flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.1px;
+}
+
+.person__tab-button__active {
+  color: #ffffff;
+  background-color: #06082c;
+}
+
+.person__tab-button__static {
+  color: #7b7ea5;
+  background-color: #f8f8f9;
+}

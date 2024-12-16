@@ -7,6 +7,7 @@ import { ResultSection } from "../../components/ResultSection/ResultSection";
 import { NewsSection } from "../../components/NewsSection/NewsSection";
 import { StreamSection } from "../../components/StreamSection/StreamSection";
 import "./home-page.scss";
+import { SportsmenSection } from "../../components/SpotsmenSection/SportsmenSection";
 
 interface ComponentMapTypes {
   Соревнования: ReactNode;
@@ -37,7 +38,7 @@ export const HomePage = () => {
         <div className="content-right">
           <RatingSection />
           <ManagementSection />
-          <section className="section-two"></section>
+          <SportsmenSection />
         </div>
       </div>
     </>

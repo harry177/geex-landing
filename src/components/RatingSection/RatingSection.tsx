@@ -36,7 +36,7 @@ export const RatingSection = () => {
 
   return (
     <section className="page-section">
-      <Flex column align="flex-start" className="gap-22">
+      <Flex column align="flex-start" className="gap-20">
         <h3 className="section-title">Рейтинг организации</h3>
         <Flex justify="center" align="center" className="graph-container">
           <canvas
