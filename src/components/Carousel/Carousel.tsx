@@ -1,18 +1,19 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/swiper-bundle.css";
-import "./carousel.scss";
+import { Navigation, Pagination } from "swiper/modules";
 import { CarouselDataTypes } from "../StreamSection/data";
 import { CarouselItem } from "../CarouselItem/CarouselItem";
 import { ForwardBox } from "../ui/ForwardBox/ForwardBox";
+import "swiper/swiper-bundle.css";
+import "./carousel.scss";
 
 export const Carousel = ({ data }: { data: CarouselDataTypes[] }) => {
   return (
     <div className="carousel">
       <Swiper
-        modules={[Pagination]}
+        modules={[Navigation, Pagination]}
         spaceBetween={5}
         slidesPerView={"auto"}
+        navigation
         pagination
         watchOverflow
         style={{ height: "100%" }}
