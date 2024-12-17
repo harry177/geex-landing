@@ -4,6 +4,7 @@
   top: -28px;
   width: calc(100% + 40px);
   height: 140px;
+  border-radius: 20px 20px 0 0;
   background: linear-gradient(to right, #09043e, #29208b);
 }
 
@@ -28,7 +29,6 @@
 }
 
 .rating-box {
-  position: absolute;
   display: flex;
   align-items: center;
   width: fit-content;
@@ -79,10 +79,6 @@
 .profile__title-checkmark {
   width: 24px;
   height: 24px;
-  background-image: url("title-checkmark.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .location-icon {

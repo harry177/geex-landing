@@ -3,9 +3,11 @@ import { Avatar } from "../ui/Avatar/Avatar";
 import { Button } from "../ui/Button/Button";
 import { Flex } from "../ui/Flex/Flex";
 import { TabButton } from "../ui/TabButton/TabButton";
-import "./profile-section.scss";
 import { DotInfoLine } from "../ui/DotInfoLine/DotInfoLine";
 import { profileInfoLine } from "./data";
+import { Tooltip } from "../ui/Tooltip/Tooltip";
+import { checkmarkContent, ratingBoxContent } from "./tooltips";
+import "./profile-section.scss";
 
 interface ProfileSectionProps {
   onTabChange: (tabName: string) => void;
@@ -26,16 +28,27 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
           <img src="profile-logo.png"></img>
         </div>
       </div>
-      <div className="rating-box">
-        <img src="green-up-arrow.svg"></img>
-        <span>№2</span>
-      </div>
+      <Flex justify="flex-end">
+        <Tooltip content={ratingBoxContent()} position="down-right">
+          <div className="rating-box">
+            <img src="green-up-arrow.svg"></img>
+            <span>№2</span>
+          </div>
+        </Tooltip>
+      </Flex>
       <Flex column gap="16px" className="profile__info-container">
         <Flex align="center" gap="8px" className="profile__title-container">
           <h1 className="profile-title">
             Cпортивная Организация Алтайского Края
           </h1>
-          <div className="profile__title-checkmark"></div>
+          <Tooltip content={checkmarkContent()} position="up">
+            <Flex align="flex-end">
+              <img
+                src="title-checkmark.png"
+                className="profile__title-checkmark"
+              ></img>
+            </Flex>
+          </Tooltip>
         </Flex>
         <DotInfoLine data={profileInfoLine} gap={6} />
         <Flex
