@@ -7,6 +7,7 @@ interface ButtonProps {
   icon?: string;
   className?: string;
   children?: ReactNode;
+  onClick?: () => void;
 }
 
 export const Button = ({
@@ -15,12 +16,14 @@ export const Button = ({
   icon,
   className,
   children,
+  onClick,
 }: ButtonProps) => {
   return (
     <button
       className={`button ${className} ${
         variant === "primary" ? "button-primary" : "button-secondary"
       } ${thin ? "button-thin" : "button-broad"}`}
+      onClick={onClick}
     >
       {icon && <img src={icon} alt="Button icon"></img>}
       {children}

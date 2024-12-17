@@ -5,9 +5,9 @@ import { ManagementSection } from "../../components/ManagementSection/Management
 import { CompetitionSection } from "../../components/CompetitionSection/CompetitionSection";
 import { ResultSection } from "../../components/ResultSection/ResultSection";
 import { NewsSection } from "../../components/NewsSection/NewsSection";
-import { StreamSection } from "../../components/StreamSection/StreamSection";
 import { SportsmenSection } from "../../components/SpotsmenSection/SportsmenSection";
 import { TrainerSection } from "../../components/TrainerSection/TrainerSection";
+import { MediaSectionFrame } from "../../components/MediaSectionFrame/MediaSectionFrame";
 import "./home-page.scss";
 
 interface ComponentMapTypes {
@@ -34,7 +34,7 @@ export const HomePage = () => {
         <div className="content-left">
           <ProfileSection onTabChange={handleTabChange} />
           {componentMap[competition as keyof ComponentMapTypes]}
-          <StreamSection />
+          <MediaSectionFrame />
         </div>
         <div className="content-right">
           <RatingSection />
