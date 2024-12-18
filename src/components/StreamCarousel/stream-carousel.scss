@@ -1,0 +1,49 @@
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.stream-swiper {
+  height: 320px !important;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
+    top: 25%;
+    border-radius: 27px;
+    background-color: rgba(113, 119, 112, 0.6);
+    backdrop-filter: blur(40px);
+    --swiper-navigation-color: #ffffff !important;
+
+    &::after {
+      --swiper-navigation-size: 10px;
+    }
+  }
+}
+
+.swiper-slide {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+
+.stream-item__slide {
+  width: 280px !important;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: flex-start;
+  bottom: 0px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #353754;
+}
+
+.carousel__forward-box {
+  position: absolute;
+  right: 0px;
+  bottom: 0.5px;
+  z-index: 50;
+}

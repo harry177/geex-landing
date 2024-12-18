@@ -10,6 +10,12 @@
   border-radius: 20px;
 }
 
+.avatar-medium {
+  width: 28px;
+  height: 28px;
+  border-radius: 22px;
+}
+
 .avatar-big {
   width: 40px;
   height: 40px;
@@ -71,5 +77,21 @@
     background: linear-gradient(to left, #74391d, #c46236, #ff9b67);
     top: 26px;
     left: 29px;
+  }
+}
+
+.avatar__badge-flag {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background: url("RU.png");
+    top: 18px;
+    left: 18px;
   }
 }

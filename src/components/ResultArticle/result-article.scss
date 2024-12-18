@@ -1,0 +1,18 @@
+.result-article {
+  border-radius: 13px;
+  border: 1px solid #eef0f7;
+}
+
+.result-article__header {
+  box-sizing: border-box;
+  border-radius: 13px 13px 0 0;
+  padding: 12px;
+  background-color: #eef0f7;
+
+  p {
+    font-weight: 548;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    color: #06082c;
+  }
+}

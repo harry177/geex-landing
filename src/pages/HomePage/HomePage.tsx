@@ -1,12 +1,12 @@
 import { ReactNode, useState } from "react";
-import { ProfileSection } from "../../components/ProfileSection/ProfileSection";
-import { RatingSection } from "../../components/RatingSection/RatingSection";
-import { ManagementSection } from "../../components/ManagementSection/ManagementSection";
-import { CompetitionSection } from "../../components/CompetitionSection/CompetitionSection";
-import { ResultSection } from "../../components/ResultSection/ResultSection";
-import { NewsSection } from "../../components/NewsSection/NewsSection";
-import { SportsmenSection } from "../../components/SpotsmenSection/SportsmenSection";
-import { TrainerSection } from "../../components/TrainerSection/TrainerSection";
+import { ProfileSection } from "../../components/sections/ProfileSection/ProfileSection";
+import { RatingSection } from "../../components/sections/RatingSection/RatingSection";
+import { ManagementSection } from "../../components/sections/ManagementSection/ManagementSection";
+import { CompetitionSection } from "../../components/sections/CompetitionSection/CompetitionSection";
+import { ResultSection } from "../../components/sections/ResultSection/ResultSection";
+import { NewsSection } from "../../components/sections/NewsSection/NewsSection";
+import { SportsmenSection } from "../../components/sections/SpotsmenSection/SportsmenSection";
+import { TrainerSection } from "../../components/sections/TrainerSection/TrainerSection";
 import { MediaSectionFrame } from "../../components/MediaSectionFrame/MediaSectionFrame";
 import "./home-page.scss";
 

@@ -34,7 +34,7 @@ export const PersonItem = ({
             {arrow && <img src={arrow} className="person-item__arrow"></img>}
           </div>
         )}
-        <Avatar image={image} medal={medal}/>
+        <Avatar image={image} badge={medal}/>
         <div className={`person-item__info-box ${contentClassName}`}>
           <p>{name}</p>
           <span className={textClassName}>{position}</span>

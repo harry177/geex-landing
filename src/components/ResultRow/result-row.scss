@@ -1,0 +1,21 @@
+.result-row {
+  padding: 8px;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid #eef0f7;
+  }
+}
+
+.result-row__winner {
+  font-weight: 548;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #06082c;
+}
+
+.result-row__loser {
+  font-weight: 548;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #7b7ea5;
+}

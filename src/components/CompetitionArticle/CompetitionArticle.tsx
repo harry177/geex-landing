@@ -1,4 +1,4 @@
-import { CompetitionArticleProps } from "../CompetitionSection/data";
+import { CompetitionArticleProps } from "../sections/CompetitionSection/data";
 import { Avatar } from "../ui/Avatar/Avatar";
 import { Button } from "../ui/Button/Button";
 import { DotInfoLine } from "../ui/DotInfoLine/DotInfoLine";

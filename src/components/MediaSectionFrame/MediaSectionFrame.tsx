@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Flex } from "../ui/Flex/Flex";
 import { TabButton } from "../ui/TabButton/TabButton";
-import { StreamSection } from "../StreamSection/StreamSection";
-import { PhotoSection } from "../PhotoSection/PhotoSection";
-import { VideoSection } from "../VideoSection/VideoSection";
+import { StreamSection } from "../sections/StreamSection/StreamSection";
+import { PhotoSection } from "../sections/PhotoSection/PhotoSection";
+import { VideoSection } from "../sections/VideoSection/VideoSection";
 
 export const MediaSectionFrame = () => {
   const [activeTab, setActiveTab] = useState("Трансляции");
