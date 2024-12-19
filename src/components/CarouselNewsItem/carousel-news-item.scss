@@ -1,4 +1,6 @@
 .carousel__news-item {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   height: 384px;
   cursor: pointer;

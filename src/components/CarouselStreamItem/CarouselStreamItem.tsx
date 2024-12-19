@@ -10,7 +10,7 @@ export const CarouselStreamItem = ({
   company,
 }: CarouselDataTypes) => {
   return (
-    <Flex column className="carousel__stream-item gap-14">
+    <article className="carousel__stream-item gap-14">
       <div>
         <img src={image} className="carousel-item__image"></img>
         {banner && (
@@ -46,6 +46,6 @@ export const CarouselStreamItem = ({
           />
         </Flex>
       </Flex>
-    </Flex>
+    </article>
   );
 };

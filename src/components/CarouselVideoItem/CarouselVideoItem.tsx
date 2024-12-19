@@ -4,7 +4,7 @@ import "./carousel-video-item.scss";
 
 export const CarouselVideoItem = ({ image, bannerDetails }: CarouselDataTypes) => {
   return (
-    <Flex column className="carousel__video-item gap-14">
+    <article className="carousel__video-item gap-14">
       <div>
         <div className="carousel__video-image__wrapper">
           <img
@@ -32,6 +32,6 @@ export const CarouselVideoItem = ({ image, bannerDetails }: CarouselDataTypes) =
           </Flex>
         )}
       </div>
-    </Flex>
+    </article>
   );
 };

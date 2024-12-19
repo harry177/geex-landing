@@ -9,7 +9,7 @@ export const CarouselNewsItem = ({
   company,
 }: CarouselDataTypes) => {
   return (
-    <Flex column className="carousel__news-item gap-14">
+    <article className="carousel__news-item gap-14">
       <Flex>
         <img src={company?.image} className="carousel-item__company-image"></img>
         <Flex column className="gap-3">
@@ -31,6 +31,6 @@ export const CarouselNewsItem = ({
         ]}
         gap={6}
       />
-    </Flex>
+    </article>
   );
 };

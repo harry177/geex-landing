@@ -1,4 +1,6 @@
 .carousel__stream-item {
+  display: flex;
+  flex-direction: column;
   width: 280px;
   height: 289px;
   cursor: pointer;
