@@ -90,7 +90,9 @@
     height: 11px;
     border: 1px solid #ffffff;
     border-radius: 20px;
-    background: url("RU.png");
+    background-image: url("../../../assets/RU.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     top: 18px;
     left: 18px;
   }
