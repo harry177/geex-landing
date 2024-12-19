@@ -1,4 +1,4 @@
-import { CarouselDataTypes } from "../StreamSection/data";
+import { CarouselDataTypes } from "../../Carousel/Carousel";
 
 export const carouselNewsData: CarouselDataTypes[] = [
   {
