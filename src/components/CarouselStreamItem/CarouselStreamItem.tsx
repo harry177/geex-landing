@@ -1,4 +1,4 @@
-import { CarouselDataTypes } from "../sections/StreamSection/data";
+import { CarouselDataTypes } from "../Carousel/Carousel";
 import { DotInfoLine } from "../ui/DotInfoLine/DotInfoLine";
 import { Flex } from "../ui/Flex/Flex";
 import "./carousel-stream-item.scss";
@@ -30,17 +30,17 @@ export const CarouselStreamItem = ({
       </div>
       <div className="carousel__stream-item__title-box">{title}</div>
       <Flex>
-        <img src={company.image} className="carousel-item__company-image"></img>
+        <img src={company?.image} className="carousel-item__company-image"></img>
         <Flex column>
-          <div className="carousel-item__company-name">{company.name}</div>
+          <div className="carousel-item__company-name">{company?.name}</div>
           <DotInfoLine
             data={[
               {
-                content: company.watchers,
+                content: company?.watchers,
                 icon: "eye-icon.svg",
                 color: "dark",
               },
-              { content: company.date, color: "dark" },
+              { content: company?.date, color: "dark" },
             ]}
             gap={6}
           />

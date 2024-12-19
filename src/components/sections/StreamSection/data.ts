@@ -1,14 +1,5 @@
-export interface CarouselDataTypes {
-  image: string;
-  title: string;
-  banner?: string;
-  company: {
-    image: string;
-    name: string;
-    watchers: string;
-    date: string;
-  };
-}
+import { CarouselDataTypes } from "../../Carousel/Carousel";
+
 
 export const carouselStreamData: CarouselDataTypes[] = [
   {
