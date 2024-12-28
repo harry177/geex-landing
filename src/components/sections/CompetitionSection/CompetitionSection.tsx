@@ -2,13 +2,25 @@ import { useState } from "react";
 import { Flex } from "../../ui/Flex/Flex";
 import { TabButton } from "../../ui/TabButton/TabButton";
 import { CompetitionArticle } from "../../CompetitionArticle/CompetitionArticle";
-import { futureDataComp, presentDataComp } from "./data";
+import { CompetitionArticleProps, futureDataComp, pastDataComp, presentDataComp } from "./data";
+
+interface CompetitionMapTypes {
+  Предстоящие: CompetitionArticleProps[];
+  Текущие: CompetitionArticleProps[];
+  Прошедшие: CompetitionArticleProps[];
+}
+
+const competitionMap: CompetitionMapTypes = {
+  Предстоящие: futureDataComp,
+  Текущие: presentDataComp,
+  Прошедшие: pastDataComp,
+};
 
 export const CompetitionSection = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [activeTab, setActiveTab] = useState("Предстоящие");
 
-  const handleTabClick = (index: number) => {
-    setActiveTab(index);
+  const handleTabClick = (tabName: string) => {
+    setActiveTab(tabName);
   };
 
   return (
@@ -25,35 +37,21 @@ export const CompetitionSection = () => {
               key={index}
               name={item.name}
               amount={item.amount}
-              isActive={activeTab === index}
-              onClick={() => handleTabClick(index)}
+              isActive={activeTab === item.name}
+              onClick={() => handleTabClick(item.name)}
             />
           ))}
         </Flex>
-        <Flex column className="gap-20">
-          <p className="article-section__title">На этой неделе</p>
-          {presentDataComp.map((item, index) => (
-            <CompetitionArticle
-              key={index}
-              image={item.image}
-              text={item.text}
-              lineData={item.lineData}
-              members={item.members}
-            />
-          ))}
-        </Flex>
-        <Flex column className="gap-20">
-          <p className="article-section__title">На следующей неделе</p>
-          {futureDataComp.map((item, index) => (
-            <CompetitionArticle
-              key={index}
-              image={item.image}
-              text={item.text}
-              lineData={item.lineData}
-              members={item.members}
-            />
-          ))}
-        </Flex>
+        {competitionMap[activeTab as keyof CompetitionMapTypes].map((item, index) => (
+          <CompetitionArticle
+            key={index}
+            periodTitle={item.periodTitle}
+            image={item.image}
+            text={item.text}
+            lineData={item.lineData}
+            members={item.members}
+          />
+        ))}
       </Flex>
     </section>
   );
