@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { HeaderNavItem } from "../HeaderNavItem/HeaderNavItem";
 import { Dropdown } from "../ui/Dropdown/Dropdown";
 import { Avatar } from "../ui/Avatar/Avatar";
@@ -9,6 +10,17 @@ import "./header.scss";
 
 export const Header = () => {
   const [activePage, setActivePage] = useState(0);
+  const [language, setLanguage] = useState("en");
+
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language]);
+
+  const handleLanguageChange = (itemName: string) => {
+    setLanguage(itemName.toLowerCase());
+  };
 
   const handleNavItemClick = (index: number) => {
     setActivePage(index);
@@ -40,6 +52,7 @@ export const Header = () => {
           <Dropdown
             items={languageData}
             dispatchedContent
+            onItemChange={handleLanguageChange}
             rootClassName="header__language-dropdown__root"
             menuClassName="header__language-dropdown"
             itemClassName="header__language-dropdown__item"

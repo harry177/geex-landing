@@ -1,0 +1,12 @@
+{
+  "organization_title": "Sports Organization Of Altai Krai",
+  "competition_section": {
+    "future_data_tab": "Upcoming",
+    "current_data_tab": "Current",
+    "past_data_tab": "Past",
+    "period_title": {
+      "this_week": "This week",
+      "next_week": "Next week"
+    }
+  }
+}

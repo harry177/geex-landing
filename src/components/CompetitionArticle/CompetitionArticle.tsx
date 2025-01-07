@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { CompetitionArticleProps } from "../sections/CompetitionSection/data";
 import { Avatar } from "../ui/Avatar/Avatar";
 import { Button } from "../ui/Button/Button";
@@ -12,9 +13,11 @@ export const CompetitionArticle = ({
   lineData,
   members,
 }: CompetitionArticleProps) => {
+  const { t } = useTranslation();
+
   return (
     <Flex column className="gap-20">
-      <p className="article-section__title">{periodTitle}</p>
+      <p className="article-section__title">{t(periodTitle)}</p>
       <Flex className="gap-12">
         <img src={image} className="comp-article__image"></img>
         <Flex column className="gap-11">

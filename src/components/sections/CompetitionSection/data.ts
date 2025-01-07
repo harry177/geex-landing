@@ -10,9 +10,10 @@ export interface CompetitionArticleProps {
   };
 }
 
+
 export const futureDataComp: CompetitionArticleProps[] = [
   {
-    periodTitle: "На этой неделе",
+    periodTitle: "competition_section.period_title.this_week",
     image: "competition-1.jpg",
     text: "Первенство Московской области по спортивной борьбе (вольная борьба) среди юниоров до 24 лет",
     lineData: [
@@ -26,7 +27,7 @@ export const futureDataComp: CompetitionArticleProps[] = [
     },
   },
   {
-    periodTitle: "На следующей неделе",
+    periodTitle: "competition_section.period_title.next_week",
     image: "competition-2.jpg",
     text: "Соревновании по греко-римской борьбе среди юношей до 16 лет памяти ЗТСССР В.А.Бормана в честь дня рождения",
     lineData: [

@@ -1,14 +1,15 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Avatar } from "../../ui/Avatar/Avatar";
 import { Button } from "../../ui/Button/Button";
 import { Flex } from "../../ui/Flex/Flex";
 import { TabButton } from "../../ui/TabButton/TabButton";
 import { DotInfoLine } from "../../ui/DotInfoLine/DotInfoLine";
-import { profileInfoLine } from "./data";
 import { Tooltip } from "../../ui/Tooltip/Tooltip";
-import { checkmarkContent, ratingBoxContent } from "./tooltips";
 import { Popup } from "../../ui/Popup/Popup";
+import { checkmarkContent, ratingBoxContent } from "./tooltips";
 import { popupContent } from "./popupContent";
+import { profileInfoLine } from "./data";
 import "./profile-section.scss";
 
 interface ProfileSectionProps {
@@ -18,6 +19,8 @@ interface ProfileSectionProps {
 export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [activeTab, setActiveTab] = useState(0);
+
+  const { t } = useTranslation();
 
   const togglePopup = () => {
     setIsPopupOpen(!isPopupOpen);
@@ -46,9 +49,7 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
         </Flex>
         <Flex column gap="16px" className="profile__info-container">
           <Flex align="center" gap="8px" className="profile__title-container">
-            <h1 className="profile-title">
-              Cпортивная Организация Алтайского Края
-            </h1>
+            <h1 className="profile-title">{t("organization_title")}</h1>
             <Tooltip content={checkmarkContent()} position="up">
               <Flex align="flex-end">
                 <img

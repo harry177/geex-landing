@@ -3,11 +3,12 @@ import "./dropdown.scss";
 
 interface DropdownProps {
   label?: string;
-  items: { section?: string; icon?: (color: string) => ReactNode }[];
+  items: { section: string; icon?: (color: string) => ReactNode }[];
   width?: string;
   dispatchedContent?: boolean;
   menuHeader?: boolean;
   children?: ReactNode;
+  onItemChange?: (itemName: string) => void;
   rootClassName?: string;
   menuClassName?: string;
   itemClassName?: string;
@@ -19,6 +20,7 @@ export const Dropdown = ({
   dispatchedContent,
   menuHeader,
   children,
+  onItemChange,
   rootClassName,
   menuClassName,
   itemClassName,
@@ -57,7 +59,10 @@ export const Dropdown = ({
     setHoveredItemIndex(null);
   };
 
-  const handleSelectItem = (index: number) => {
+  const handleSelectItem = (index: number, itemName: string) => {
+    if (onItemChange) {
+      onItemChange(itemName);
+    }
     setSelectedItem(index);
   };
 
@@ -93,7 +98,7 @@ export const Dropdown = ({
                 className={itemClassName}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={handleMouseLeave}
-                onClick={() => handleSelectItem(index)}
+                onClick={() => handleSelectItem(index, item.section)}
               >
                 {item.icon &&
                   item.icon(hoveredItemIndex === index ? "#353754" : "#9395b8")}

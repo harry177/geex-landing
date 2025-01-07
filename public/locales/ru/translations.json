@@ -1,0 +1,12 @@
+{
+  "organization_title": "Спортивная Организация Алтайского Края",
+  "competition_section": {
+    "future_data_tab": "Предстоящие",
+    "current_data_tab": "Текущие",
+    "past_data_tab": "Прошедшие",
+    "period_title": {
+      "this_week": "На этой неделе",
+      "next_week": "На следующей неделе"
+    }
+  }
+}

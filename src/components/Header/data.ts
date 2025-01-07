@@ -13,7 +13,7 @@ import { PhoneIcon } from "../../svg/PhoneIcon";
 import { ExitIcon } from "../../svg/ExitIcon";
 import { RussiaIcon } from "../../svg/RussiaIcon";
 import { BritainIcon } from "../../svg/BritainIcon";
-import { FranceIcon } from "../../svg/FranceIcon";
+import { GermanyIcon } from "../../svg/GermanyIcon";
 
 export const navData = [
   { page: "Лента", icon: HomeIcon, url: "/" },
@@ -36,7 +36,7 @@ export const userData = [
 ];
 
 export const languageData = [
-  { section: "RU", icon: RussiaIcon },
   { section: "EN", icon: BritainIcon },
-  { section: "FR", icon: FranceIcon },
+  { section: "DE", icon: GermanyIcon },
+  { section: "RU", icon: RussiaIcon },
 ];
