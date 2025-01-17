@@ -1,12 +1,80 @@
 {
+  "header": {
+    "nav": {
+      "feed": "Feed",
+      "marketplace": "Markt",
+      "ratings": "Bewertungen",
+      "competitions": "Wettbewerbe",
+      "organizations": "Organisationen",
+      "live": "Live"
+    },
+    "profile": {
+      "profile": "Profil",
+      "add_organization": "Organisation hinzufügen",
+      "my_competitions": "Meine Wettbewerbe",
+      "payments_history": "Zahlungshistorie",
+      "my_tickets": "Meine Tickets",
+      "get_license": "Die Lizenz holen",
+      "change_phone_number": "Telefonnummer ändern",
+      "exit": "Ausgang"
+    }
+  },
   "organization_title": "Die Sportorganisation Der Region Altai",
   "competition_section": {
-    "future_data_tab": "Kommende",
-    "current_data_tab": "Aktuelle",
-    "past_data_tab": "Vergangene",
+    "tabs": {
+      "future_data": "Kommende",
+      "current_data": "Aktuelle",
+      "past_data": "Vergangene"
+    },
     "period_title": {
       "this_week": "Diese Woche",
       "next_week": "Nächste Woche"
+    }
+  },
+  "profile_section": {
+    "info_line": {
+      "1": "Region Altai",
+      "2": "Ringen",
+      "3": "Griechisch-römischer Ringkampf",
+      "4": "Strandwrestling"
+    },
+    "member_line": {
+      "sportsmen": "Sportler",
+      "subscribers": "Tailnehmer",
+      "leagues": "Ligen"
+    },
+    "buttons": {
+      "subscribe": "Abonnieren",
+      "details": "Einzelheiten"
+    },
+    "tabs": {
+      "competitions": "Wettbewerbe",
+      "results": "Ergebnisse",
+      "news": "Nachrichten"
+    },
+    "tooltips": {
+      "checkmark": "Die Organisation wurde akkreditiert",
+      "rating": {
+        "change_title": "Platzwechsel im Ranking",
+        "last_change": "1 Feb 2024",
+        "middle_change": "25 Jan 2024",
+        "first_change": "2 Jan 2024",
+        "position_title": "Bewertung: Hoch",
+        "position_text": "Die Athleten der Organisation zeigen im Training und bei Wettkämpfen recht gute Ergebnisse"
+      }
+    },
+    "popup": {
+      "header": "Weitere Informationen",
+      "phone_title": "Telefonnummer",
+      "address_title": "Adresse",
+      "address_content": "930293, Region Altai, Barnaul, Sozialistische Avenue, 28 Büro 220",
+      "about_title": "Über die Organisation",
+      "about_content": "„Sportorganisation der Region Altai“ ist eine dynamische Vereinigung von Sportbegeisterten, die sich der Entwicklung und Popularisierung des Ringens in der Region widmen. Unsere Mission ist es, Bedingungen für die berufliche Entwicklung und Leistung von Sportlern zu schaffen und junge Menschen durch Sport in einen aktiven Lebensstil einzubeziehen. Wir organisieren Trainings, Wettbewerbe und Veranstaltungen mit dem Ziel, die körperlichen und moralischen Qualitäten der Teilnehmer zu entwickeln.",
+      "president_title": "Präsident der Organisation",
+      "responsible_title": "Verantwortlich für die Führung des Registers",
+      "site_title": "Website der Organisation",
+      "time_title": "Öffnungszeiten",
+      "time_content": "Mo-Fr: 08:00-22:00, Sa-So: 10:00-17:00"
     }
   }
 }

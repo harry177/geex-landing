@@ -9,10 +9,10 @@ import { languageData, navData, userData } from "./data";
 import "./header.scss";
 
 export const Header = () => {
-  const [activePage, setActivePage] = useState(0);
+  const [activePage, setActivePage] = useState(4);
   const [language, setLanguage] = useState("en");
 
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     i18n.changeLanguage(language);
@@ -39,7 +39,7 @@ export const Header = () => {
             {navData.map(({ page, icon, url }, index) => (
               <HeaderNavItem
                 key={index}
-                page={page}
+                page={t(page)}
                 icon={icon}
                 url={url}
                 isActive={activePage === index}

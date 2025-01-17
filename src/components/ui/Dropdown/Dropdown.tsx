@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect, ReactNode } from "react";
+import { useTranslation } from "react-i18next";
 import "./dropdown.scss";
 
 interface DropdownProps {
@@ -28,6 +29,8 @@ export const Dropdown = ({
   const [isOpen, setIsOpen] = useState(false);
   const [hoveredItemIndex, setHoveredItemIndex] = useState<number | null>(null);
   const [selectedItem, setSelectedItem] = useState(0);
+
+  const { t } = useTranslation();
 
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -102,7 +105,7 @@ export const Dropdown = ({
               >
                 {item.icon &&
                   item.icon(hoveredItemIndex === index ? "#353754" : "#9395b8")}
-                {item.section}
+                {t(item.section)}
               </li>
             ))}
           </ul>

@@ -16,23 +16,23 @@ import { BritainIcon } from "../../svg/BritainIcon";
 import { GermanyIcon } from "../../svg/GermanyIcon";
 
 export const navData = [
-  { page: "Лента", icon: HomeIcon, url: "/" },
-  { page: "Маркетплейс", icon: ShopperIcon, url: "marketplace" },
-  { page: "Рейтинги", icon: UsersIcon, url: "ratings" },
-  { page: "Соревнования", icon: PrizeIcon, url: "competitions" },
-  { page: "Организации", icon: OrganizationIcon, url: "organizations" },
-  { page: "Live", icon: StreamIcon, url: "streams" },
+  { page: "header.nav.feed", icon: HomeIcon, url: "/" },
+  { page: "header.nav.marketplace", icon: ShopperIcon, url: "marketplace" },
+  { page: "header.nav.ratings", icon: UsersIcon, url: "ratings" },
+  { page: "header.nav.competitions", icon: PrizeIcon, url: "competitions" },
+  { page: "header.nav.organizations", icon: OrganizationIcon, url: "organizations" },
+  { page: "header.nav.live", icon: StreamIcon, url: "streams" },
 ];
 
 export const userData = [
-  { section: "Профиль", icon: UserIcon },
-  { section: "Добавить организацию", icon: PlusIcon },
-  { section: "Мои соревнования", icon: PrizeIcon },
-  { section: "История платежей", icon: WalletIcon },
-  { section: "Мои билеты", icon: TicketIcon },
-  { section: "Получить лицензию", icon: DocumentIcon },
-  { section: "Смена номера телефона", icon: PhoneIcon },
-  { section: "Выйти", icon: ExitIcon },
+  { section: "header.profile.profile", icon: UserIcon },
+  { section: "header.profile.add_organization", icon: PlusIcon },
+  { section: "header.profile.my_competitions", icon: PrizeIcon },
+  { section: "header.profile.payments_history", icon: WalletIcon },
+  { section: "header.profile.my_tickets", icon: TicketIcon },
+  { section: "header.profile.get_license", icon: DocumentIcon },
+  { section: "header.profile.change_phone_number", icon: PhoneIcon },
+  { section: "header.profile.exit", icon: ExitIcon },
 ];
 
 export const languageData = [

@@ -1,12 +1,80 @@
 {
+  "header": {
+    "nav": {
+      "feed": "Feed",
+      "marketplace": "Marketplace",
+      "ratings": "Ratings",
+      "competitions": "Competitions",
+      "organizations": "Organizations",
+      "live": "Live"
+    },
+    "profile": {
+      "profile": "Profile",
+      "add_organization": "Add organization",
+      "my_competitions": "My competitions",
+      "payments_history": "Payments history",
+      "my_tickets": "My tickets",
+      "get_license": "Get license",
+      "change_phone_number": "Change phone number",
+      "exit": "Exit"
+    }
+  },
   "organization_title": "Sports Organization Of Altai Krai",
   "competition_section": {
-    "future_data_tab": "Upcoming",
-    "current_data_tab": "Current",
-    "past_data_tab": "Past",
+    "tabs": {
+      "future_data": "Upcoming",
+      "current_data": "Current",
+      "past_data": "Past"
+    },
     "period_title": {
       "this_week": "This week",
       "next_week": "Next week"
+    }
+  },
+  "profile_section": {
+    "info_line": {
+      "1": "Altai krai",
+      "2": "Grappling",
+      "3": "Greco-Roman wrestling",
+      "4": "Beach wrestling"
+    },
+    "member_line": {
+      "sportsmen": "Sportsmen",
+      "subscribers": "Subscribers",
+      "leagues": "Leagues"
+    },
+    "buttons": {
+      "subscribe": "Subscribe",
+      "details": "Details"
+    },
+    "tabs": {
+      "competitions": "Competitions",
+      "results": "Results",
+      "news": "News"
+    },
+    "tooltips": {
+      "checkmark": "The organization has been accredited",
+      "rating": {
+        "change_title": "Place change in the ranking",
+        "last_change": "1 Feb 2024",
+        "middle_change": "25 Jan 2024",
+        "first_change": "2 Jan 2024",
+        "position_title": "Rating: High",
+        "position_text": "The organization's athletes show quite good results in training and competitions"
+      }
+    },
+    "popup": {
+      "header": "Additional information",
+      "phone_title": "Phone number",
+      "address_title": "Address",
+      "address_content": "930293, Altai Krai, Barnaul, Socialist Avenue, 28 office 220",
+      "about_title": "About the organization",
+      "about_content": "„The Altai Krai Sports Organization“ is a dynamic association of sports enthusiasts who are dedicated to the development and popularization of wrestling in the region. Our mission is to create conditions for professional growth and achievements of athletes, as well as to involve young people in an active lifestyle through sports. We organize trainings, competitions and events aimed at developing the physical and moral qualities of participants.",
+      "president_title": "Organization president",
+      "responsible_title": "Responsible for maintaining the register",
+      "site_title": "Organization website",
+      "time_title": "Opening hours",
+      "time_content": "Mon-Fri: 08:00-22:00, Sat-Sun: 10:00-17:00"
     }
   }
 }

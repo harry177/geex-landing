@@ -7,10 +7,13 @@ import { TabButton } from "../../ui/TabButton/TabButton";
 import { DotInfoLine } from "../../ui/DotInfoLine/DotInfoLine";
 import { Tooltip } from "../../ui/Tooltip/Tooltip";
 import { Popup } from "../../ui/Popup/Popup";
-import { checkmarkContent, ratingBoxContent } from "./tooltips";
-import { popupContent } from "./popupContent";
-import { profileInfoLine } from "./data";
+import { ProfilePopup } from "../../popups/ProfilePopup/ProfilePopup";
+import { CheckmarkContent } from "../../tooltips/CheckmarkContent/CheckmarkContent";
+import { RatingBoxContent } from "../../tooltips/RatingBoxContent/RatingBoxContent";
+import { profileInfoLine, profileMembers } from "./data";
+import { PROFILE_TAB_KEYS } from "./constants";
 import "./profile-section.scss";
+
 
 interface ProfileSectionProps {
   onTabChange: (tabName: string) => void;
@@ -40,7 +43,7 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
           </div>
         </div>
         <Flex justify="flex-end">
-          <Tooltip content={ratingBoxContent()} position="down-right">
+          <Tooltip content={RatingBoxContent()} position="down-right">
             <div className="rating-box">
               <img src="green-up-arrow.svg"></img>
               <span>№2</span>
@@ -50,7 +53,7 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
         <Flex column gap="16px" className="profile__info-container">
           <Flex align="center" gap="8px" className="profile__title-container">
             <h1 className="profile-title">{t("organization_title")}</h1>
-            <Tooltip content={checkmarkContent()} position="up">
+            <Tooltip content={CheckmarkContent()} position="up">
               <Flex align="flex-end">
                 <img
                   src="title-checkmark.png"
@@ -74,32 +77,7 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
                 <Avatar key={index} size="small" range image={item.image} />
               ))}
             </Flex>
-            <Flex
-              align="center"
-              gap="6px"
-              className="profile__statistics-container__section"
-            >
-              <p>45</p>
-              <p>Спортсменов</p>
-            </Flex>
-            <div className="profile__grey-dot"></div>
-            <Flex
-              align="center"
-              gap="6px"
-              className="profile__statistics-container__section"
-            >
-              <p>125</p>
-              <p>Подписчиков</p>
-            </Flex>
-            <div className="profile__grey-dot"></div>
-            <Flex
-              align="center"
-              gap="6px"
-              className="profile__statistics-container__section"
-            >
-              <p>12</p>
-              <p>Лиг</p>
-            </Flex>
+            <DotInfoLine data={profileMembers} gap={6} />
           </Flex>
           <Flex gap="8px" className="profile__medal-container">
             <Flex
@@ -129,29 +107,33 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
           </Flex>
         </Flex>
         <Flex gap="10px" className="profile__button-container">
-          <Button variant="primary">Подписаться</Button>
+          <Button variant="primary">
+            {t("profile_section.buttons.subscribe")}
+          </Button>
           <Button variant="secondary" onClick={togglePopup}>
-            Подробнее
+            {t("profile_section.buttons.details")}
           </Button>
           <Button variant="secondary" thin icon="./forward-arrow-icon.svg" />
         </Flex>
         <Flex gap="16px" className="profile__tabs-container">
-          {Array.from(["Соревнования", "Результаты", "Новости"]).map(
-            (item, index) => (
-              <TabButton
-                key={index}
-                name={item}
-                isActive={activeTab === index}
-                onClick={() => handleTabClick(index, item)}
-                className="profile__tab-button"
-              />
-            )
-          )}
+          {Array.from([
+            PROFILE_TAB_KEYS.COMPETITIONS,
+            PROFILE_TAB_KEYS.RESULTS,
+            PROFILE_TAB_KEYS.NEWS,
+          ]).map((item, index) => (
+            <TabButton
+              key={index}
+              name={t(item)}
+              isActive={activeTab === index}
+              onClick={() => handleTabClick(index, item)}
+              className="profile__tab-button"
+            />
+          ))}
         </Flex>
       </section>
       <Popup
         isOpen={isPopupOpen}
-        children={popupContent()}
+        children={ProfilePopup()}
         onClose={togglePopup}
       />
     </>

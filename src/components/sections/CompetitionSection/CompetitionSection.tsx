@@ -6,19 +6,19 @@ import { CompetitionArticle } from "../../CompetitionArticle/CompetitionArticle"
 import { CompetitionArticleProps, futureDataComp, pastDataComp, presentDataComp } from "./data";
 
 interface CompetitionMapTypes {
-  "competition_section.future_data_tab": CompetitionArticleProps[];
-  "competition_section.current_data_tab": CompetitionArticleProps[];
-  "competition_section.past_data_tab": CompetitionArticleProps[];
+  "competition_section.tabs.future_data": CompetitionArticleProps[];
+  "competition_section.tabs.current_data": CompetitionArticleProps[];
+  "competition_section.tabs.past_data": CompetitionArticleProps[];
 }
 
 const competitionMap: CompetitionMapTypes = {
-  "competition_section.future_data_tab": futureDataComp,
-  "competition_section.current_data_tab": presentDataComp,
-  "competition_section.past_data_tab": pastDataComp,
+  "competition_section.tabs.future_data": futureDataComp,
+  "competition_section.tabs.current_data": presentDataComp,
+  "competition_section.tabs.past_data": pastDataComp,
 };
 
 export const CompetitionSection = () => {
-  const [activeTab, setActiveTab] = useState("competition_section.future_data_tab");
+  const [activeTab, setActiveTab] = useState("competition_section.tabs.future_data");
 
   const { t } = useTranslation();
 
@@ -32,9 +32,9 @@ export const CompetitionSection = () => {
         <h2 className="section-title">Соревнования</h2>
         <Flex className="gap-16">
           {Array.from([
-            { name: "competition_section.future_data_tab", amount: 2 },
-            { name: "competition_section.current_data_tab", amount: 2 },
-            { name: "competition_section.past_data_tab", amount: 367 },
+            { name: "competition_section.tabs.future_data", amount: 2 },
+            { name: "competition_section.tabs.current_data", amount: 2 },
+            { name: "competition_section.tabs.past_data", amount: 367 },
           ]).map((item, index) => (
             <TabButton
               key={index}
