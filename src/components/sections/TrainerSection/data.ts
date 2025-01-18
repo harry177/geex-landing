@@ -3,14 +3,14 @@ import { PersonItemProps } from "../../PersonItem/PersonItem";
 export const trainerData: PersonItemProps[] = [
   {
     name: "Константин Ковалевский",
-    position: "Заслуженный тренер Российской Федерации по гандболу",
+    position: "trainer_section.person_1",
     image: "trainers/trainer-1.png",
     rank: 1,
     rating: 12031,
   },
   {
     name: "Вадим Давыдов",
-    position: "Тренер по греко-римской борьбе ",
+    position: "trainer_section.person_2",
     image: "trainers/trainer-2.png",
     rank: 2,
     arrow: "green-up-arrow.svg",
@@ -18,7 +18,7 @@ export const trainerData: PersonItemProps[] = [
   },
   {
     name: "Александр Антонов",
-    position: "Тренер по греко-римской и пляжной борьбе ",
+    position: "trainer_section.person_3",
     image: "trainers/trainer-3.png",
     rank: 3,
     arrow: "green-up-arrow.svg",

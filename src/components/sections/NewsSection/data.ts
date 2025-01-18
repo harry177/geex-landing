@@ -3,32 +3,32 @@ import { CarouselDataTypes } from "../../Carousel/Carousel";
 export const carouselNewsData: CarouselDataTypes[] = [
   {
     image: "news/news-image-1.jpg",
-    title: "Илья Бессонов дал интервью для телеканала Россия-1",
+    title: "news_section.data.1.title",
     company: {
       image: "profile-logo.png",
-      name: "Спортивная Организация Алтайского Края",
+      name: "organization_title",
       watchers: "4.1 K",
-      date: "12 марта, 2024 в 16:03",
+      date: "news_section.data.1.date",
     },
   },
   {
     image: "news/news-image-2.jpg",
-    title: "Результаты первого тура чемпионата по тяжелой атлетике",
+    title: "news_section.data.2.title",
     company: {
       image: "profile-logo.png",
-      name: "Спортивная Организация Алтайского Края",
+      name: "organization_title",
       watchers: "4.1 K",
-      date: "24 февраля, 2024 в 15:55",
+      date: "news_section.data.2.date",
     },
   },
   {
     image: "news/news-image-3.jpg",
-    title: "Прошла последняя тренировка перед финальным матчем по гандболу",
+    title: "news_section.data.3.title",
     company: {
       image: "profile-logo.png",
-      name: "Спортивная Организация Алтайского Края",
+      name: "organization_title",
       watchers: "4.1 K",
-      date: "14 января, 2024 в 17:23",
+      date: "news_section.data.3.date",
     },
   },
 ];

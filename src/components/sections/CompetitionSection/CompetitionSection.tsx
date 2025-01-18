@@ -29,7 +29,7 @@ export const CompetitionSection = () => {
   return (
     <section className="page-section">
       <Flex column align="flex-start" className="gap-24">
-        <h2 className="section-title">Соревнования</h2>
+        <h2 className="section-title">{t("competition_section.header")}</h2>
         <Flex className="gap-16">
           {Array.from([
             { name: "competition_section.tabs.future_data", amount: 2 },

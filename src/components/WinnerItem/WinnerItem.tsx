@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Avatar } from "../ui/Avatar/Avatar";
 import { Flex } from "../ui/Flex/Flex";
 import "./winner-item.scss";
@@ -17,6 +18,8 @@ export const WinnerItem = ({
   rating,
   background,
 }: WinnerItemProps) => {
+  const { t } = useTranslation();
+
   return (
     <Flex
       column
@@ -24,7 +27,7 @@ export const WinnerItem = ({
         background === "red" ? "winner-item__red" : "winner-item__blue"
       }`}
     >
-      <p className="winner-item__rating">{`${rating} очков`}</p>
+      <p className="winner-item__rating">{`${rating} ${t("rating_data.points")}`}</p>
       <Flex className="gap-12">
         <Avatar image={image} size="xl" />
         <Flex column className="gap-3">

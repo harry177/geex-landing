@@ -3,14 +3,14 @@ import { PersonItemProps } from "../../PersonItem/PersonItem";
 export const sportsmenData: PersonItemProps[] = [
   {
     name: "Константин Ковалевский",
-    position: "Призер Олимпийских игр, двукратный призер чемпионатов мира",
+    position: "sportsmen_section.person_1",
     image: "sportsmen/sportsman-1.png",
     rank: 1,
     rating: 12031,
   },
   {
     name: "Вадим Давыдов",
-    position: "Двухкратный чемпион мира ",
+    position: "sportsmen_section.person_2",
     image: "sportsmen/sportsman-2.png",
     rank: 2,
     arrow: "green-up-arrow.svg",
@@ -19,7 +19,7 @@ export const sportsmenData: PersonItemProps[] = [
   },
   {
     name: "Александр Антонов",
-    position: "Призер Олимпийских игр, двукратный призер чемпионатов мира",
+    position: "sportsmen_section.person_3",
     image: "sportsmen/sportsman-3.png",
     rank: 3,
     arrow: "green-up-arrow.svg",
@@ -28,8 +28,7 @@ export const sportsmenData: PersonItemProps[] = [
   },
   {
     name: "Дмитрий Пономарев",
-    position:
-      "Мастер спорта СССР международного класса, заслуженный тренер СССР по греко-римской борьбе",
+    position: "sportsmen_section.person_4",
     image: "sportsmen/sportsman-4.png",
     rank: 4,
     rating: 2493,
@@ -37,7 +36,7 @@ export const sportsmenData: PersonItemProps[] = [
   },
   {
     name: "Андрей Козлов",
-    position: "Призер Олимпийских игр, двукратный призер чемпионатов мира",
+    position: "sportsmen_section.person_5",
     image: "sportsmen/sportsman-5.png",
     rank: 5,
     arrow: "red-down-arrow.svg",

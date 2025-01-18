@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Flex } from "../../ui/Flex/Flex";
 import { ForwardBox } from "../../ui/ForwardBox/ForwardBox";
 import { TabButton } from "../../ui/TabButton/TabButton";
@@ -12,6 +13,8 @@ export const SportsmenSection = () => {
   const [activeGenderTab, setActiveGenderTab] = useState(0);
   const [activeWeightTab, setActiveWeightTab] = useState(0);
 
+  const { t } = useTranslation();
+
   const handleGenderTabClick = (index: number) => {
     setActiveGenderTab(index);
   };
@@ -24,15 +27,15 @@ export const SportsmenSection = () => {
     <section className="page-section">
       <Flex column align="flex-start" className="gap-24">
         <Flex justify="space-between" align="center" className="w-full">
-          <h3 className="section-title">Спортсмены</h3>
+          <h3 className="section-title">{t("sportsmen_section.header")}</h3>
           <ForwardBox name="forward_box.show_all_persons" url="/sportsmen" />
         </Flex>
         <Flex className="gap-16">
-          {Array.from([{ name: "Мужчины" }, { name: "Женщины" }]).map(
+          {Array.from([{ name: "sportsmen_section.men" }, { name: "sportsmen_section.women" }]).map(
             (item, index) => (
               <TabButton
                 key={index}
-                name={item.name}
+                name={t(item.name)}
                 isActive={activeGenderTab === index}
                 onClick={() => handleGenderTabClick(index)}
                 className="sportsmen__gender-button"
@@ -62,7 +65,7 @@ export const SportsmenSection = () => {
               <Flex key={index} column className="gap-20">
                 <WinnerItem
                   name={item.name}
-                  position={item.position}
+                  position={t(item.position)}
                   image={item.image}
                   rating={item.rating}
                   background="red"
@@ -73,16 +76,16 @@ export const SportsmenSection = () => {
                 >
                   <Flex className="gap-20">
                     <p>№</p>
-                    <p>Спортсмен</p>
+                    <p>{t("rating_data.sportsman")}</p>
                   </Flex>
-                  <p>Рейтинг</p>
+                  <p>{t("rating_data.rating")}</p>
                 </Flex>
               </Flex>
             ) : (
               <PersonItem
                 key={index}
                 name={item.name}
-                position={item.position}
+                position={t(item.position)}
                 image={item.image}
                 rank={item.rank}
                 arrow={item.arrow}

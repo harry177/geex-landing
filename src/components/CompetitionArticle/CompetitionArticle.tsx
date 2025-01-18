@@ -25,7 +25,7 @@ export const CompetitionArticle = ({
             <DotInfoLine data={lineData} gap={12} />
             <img src="bell-filled-icon.svg" />
           </Flex>
-          <span className="comp-article__text">{text}</span>
+          <span className="comp-article__text">{t(text)}</span>
           <Flex className="gap-8">
             <Flex className="avatar-container">
               {members.images.map((item, index) => (
@@ -34,15 +34,15 @@ export const CompetitionArticle = ({
             </Flex>
             <Flex className="comp-article__members gap-6">
               <p>{members.amount}</p>
-              <p>Участников</p>
+              <p>{t("competition_section.participants")}</p>
             </Flex>
           </Flex>
           <Flex className="comp-article__buttons gap-16">
             <Button variant="secondary" icon="hand-icon.svg">
-              Принять участие
+              {t("competition_section.buttons.take_part")}
             </Button>
             <Button variant="secondary" icon="cart-icon.svg">
-              Купить билет
+              {t("competition_section.buttons.buy_ticket")}
             </Button>
           </Flex>
         </Flex>

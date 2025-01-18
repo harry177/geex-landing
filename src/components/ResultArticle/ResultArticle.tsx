@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { ResultRow, ResultRowProps } from "../ResultRow/ResultRow";
 import { DotInfoLine, InfoLineTypes } from "../ui/DotInfoLine/DotInfoLine";
 import { Flex } from "../ui/Flex/Flex";
@@ -14,10 +15,12 @@ export const ResultArticle = ({
   lineData,
   games,
 }: ResultArticleProps) => {
+  const { t } = useTranslation();
+
   return (
     <Flex column className="result-article gap-8">
       <Flex column className="result-article__header gap-6">
-        <p >{title}</p>
+        <p>{t(title)}</p>
         <DotInfoLine data={lineData} gap={12} />
       </Flex>
       <Flex column>

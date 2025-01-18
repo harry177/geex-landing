@@ -13,15 +13,15 @@ export const resultData: ResultArticleProps[] = [
   {
     header: {
       title:
-        "Первенство Московской области по спортивной борьбе (вольная борьба) среди юниоров",
+        "result_section.data.1.title",
       lineData: [
-        { content: "17 Марта, 14:00", icon: "calendar.svg", color: "dark" },
+        { content: "result_section.data.1.info_line.1", icon: "calendar.svg", color: "dark" },
         {
-          content: "Москва, Россия",
+          content: "result_section.data.1.info_line.2",
           icon: "location-icon.svg",
           color: "dark",
         },
-        { content: "5 матчей" },
+        { content: "result_section.data.1.info_line.3" },
       ],
     },
     content: [
@@ -54,15 +54,15 @@ export const resultData: ResultArticleProps[] = [
   {
     header: {
       title:
-        "Соревновании по греко-римской борьбе среди юношей до 16 лет памяти ЗТСССР В.А.Бормана",
+        "result_section.data.2.title",
       lineData: [
-        { content: "17 Марта, 14:00", icon: "calendar.svg", color: "dark" },
+        { content: "result_section.data.2.info_line.1", icon: "calendar.svg", color: "dark" },
         {
-          content: "Санкт-Петербург, Россия",
+          content: "result_section.data.2.info_line.2",
           icon: "location-icon.svg",
           color: "dark",
         },
-        { content: "10 матчей" },
+        { content: "result_section.data.2.info_line.3" },
       ],
     },
     content: [

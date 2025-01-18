@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { CarouselDataTypes } from "../Carousel/Carousel";
 import { DotInfoLine } from "../ui/DotInfoLine/DotInfoLine";
 import { Flex } from "../ui/Flex/Flex";
@@ -8,16 +9,21 @@ export const CarouselNewsItem = ({
   title,
   company,
 }: CarouselDataTypes) => {
+  const { t } = useTranslation();
+
   return (
     <article className="carousel__news-item gap-14">
       <Flex>
-        <img src={company?.image} className="carousel-item__company-image"></img>
+        <img
+          src={company?.image}
+          className="carousel-item__company-image"
+        ></img>
         <Flex column className="gap-3">
-          <div className="carousel-item__company-name">{company?.name}</div>
-          <div className="carousel-item__company-date">{company?.date}</div>
+          <div className="carousel-item__company-name">{company && t(company.name)}</div>
+          <div className="carousel-item__company-date">{company && t(company.date)}</div>
         </Flex>
       </Flex>
-      <div className="carousel__news-item__title-box">{title}</div>
+      <div className="carousel__news-item__title-box">{title && t(title)}</div>
       <div>
         <img src={image} className="carousel__news-item__image"></img>
       </div>

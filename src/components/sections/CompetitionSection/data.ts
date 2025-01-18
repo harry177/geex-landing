@@ -13,13 +13,13 @@ export interface CompetitionArticleProps {
 
 export const futureDataComp: CompetitionArticleProps[] = [
   {
-    periodTitle: "competition_section.period_title.this_week",
+    periodTitle: "competition_section.data.future.1.period_title",
     image: "competition-1.jpg",
-    text: "Первенство Московской области по спортивной борьбе (вольная борьба) среди юниоров до 24 лет",
+    text: "competition_section.data.future.1.text",
     lineData: [
-      { content: "17 марта, 14:00", icon: "calendar.svg", color: "dark" },
-      { content: "Москва, Россия", icon: "location-icon.svg", color: "dark" },
-      { content: "5 матчей", icon: "", color: "dark" },
+      { content: "competition_section.data.future.1.info_line.1", icon: "calendar.svg", color: "dark" },
+      { content: "competition_section.data.future.1.info_line.2", icon: "location-icon.svg", color: "dark" },
+      { content: "competition_section.data.future.1.info_line.3", icon: "", color: "dark" },
     ],
     members: {
       amount: 167,
@@ -27,13 +27,13 @@ export const futureDataComp: CompetitionArticleProps[] = [
     },
   },
   {
-    periodTitle: "competition_section.period_title.next_week",
+    periodTitle: "competition_section.data.future.2.period_title",
     image: "competition-2.jpg",
-    text: "Соревновании по греко-римской борьбе среди юношей до 16 лет памяти ЗТСССР В.А.Бормана в честь дня рождения",
+    text: "competition_section.data.future.2.text",
     lineData: [
-      { content: "21 февраля, 08:30", icon: "calendar.svg", color: "dark" },
-      { content: "Москва, Россия", icon: "location-icon.svg", color: "dark" },
-      { content: "10 матчей", icon: "", color: "dark" },
+      { content: "competition_section.data.future.2.info_line.1", icon: "calendar.svg", color: "dark" },
+      { content: "competition_section.data.future.2.info_line.2", icon: "location-icon.svg", color: "dark" },
+      { content: "competition_section.data.future.2.info_line.3", icon: "", color: "dark" },
     ],
     members: {
       amount: 24,
@@ -45,13 +45,13 @@ export const futureDataComp: CompetitionArticleProps[] = [
 
 export const presentDataComp: CompetitionArticleProps[] = [
   {
-    periodTitle: "Сегодня",
+    periodTitle: "competition_section.data.current.1.period_title",
     image: "competition-2.jpg",
-    text: "Первенство Московской области по спортивной борьбе (вольная борьба) среди юниоров до 24 лет",
+    text: "competition_section.data.current.1.text",
     lineData: [
-      { content: "11 марта, 18:00", icon: "calendar.svg", color: "dark" },
-      { content: "Ульяновск, Россия", icon: "location-icon.svg", color: "dark" },
-      { content: "8 матчей", icon: "", color: "dark" },
+      { content: "competition_section.data.current.1.info_line.1", icon: "calendar.svg", color: "dark" },
+      { content: "competition_section.data.current.1.info_line.2", icon: "location-icon.svg", color: "dark" },
+      { content: "competition_section.data.current.1.info_line.3", icon: "", color: "dark" },
     ],
     members: {
       amount: 27,
@@ -59,13 +59,13 @@ export const presentDataComp: CompetitionArticleProps[] = [
     },
   },
   {
-    periodTitle: "Завтра",
+    periodTitle: "competition_section.data.current.2.period_title",
     image: "competition-1.jpg",
-    text: "Соревновании по греко-римской борьбе среди юношей до 16 лет памяти ЗТСССР В.А.Бормана в честь дня рождения",
+    text: "competition_section.data.current.2.text",
     lineData: [
-      { content: "12 марта, 12:00", icon: "calendar.svg", color: "dark" },
-      { content: "Москва, Россия", icon: "location-icon.svg", color: "dark" },
-      { content: "5 матчей", icon: "", color: "dark" },
+      { content: "competition_section.data.current.2.info_line.1", icon: "calendar.svg", color: "dark" },
+      { content: "competition_section.data.current.2.info_line.2", icon: "location-icon.svg", color: "dark" },
+      { content: "competition_section.data.current.2.info_line.3", icon: "", color: "dark" },
     ],
     members: {
       amount: 90,
@@ -77,13 +77,13 @@ export const presentDataComp: CompetitionArticleProps[] = [
 
 export const pastDataComp: CompetitionArticleProps[] = [
   {
-    periodTitle: "В прошлом месяце",
+    periodTitle: "competition_section.data.past.1.period_title",
     image: "competition-2.jpg",
-    text: "Первенство Республики Татарстан по спортивной борьбе (вольная борьба) среди юниоров до 24 лет",
+    text: "competition_section.data.past.1.text",
     lineData: [
-      { content: "30 января, 18:00", icon: "calendar.svg", color: "dark" },
-      { content: "Казань, Россия", icon: "location-icon.svg", color: "dark" },
-      { content: "10 матчей", icon: "", color: "dark" },
+      { content: "competition_section.data.past.1.info_line.1", icon: "calendar.svg", color: "dark" },
+      { content: "competition_section.data.past.1.info_line.2", icon: "location-icon.svg", color: "dark" },
+      { content: "competition_section.data.past.1.info_line.3", icon: "", color: "dark" },
     ],
     members: {
       amount: 51,

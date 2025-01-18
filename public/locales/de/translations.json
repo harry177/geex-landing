@@ -23,16 +23,76 @@
     "show_all": "Alle anzeigen",
     "show_all_persons": "Alle anzeigen"
   },
+  "rating_data": {
+    "points": "Punkte",
+    "sportsman": "Sportler",
+    "rating": "Bewertung"
+  },
   "organization_title": "Die Sportorganisation Der Region Altai",
   "competition_section": {
+    "header": "Wettbewerbe",
     "tabs": {
       "future_data": "Kommende",
       "current_data": "Aktuelle",
       "past_data": "Vergangene"
     },
-    "period_title": {
-      "this_week": "Diese Woche",
-      "next_week": "Nächste Woche"
+    "data": {
+      "future": {
+        "1": {
+          "period_title": "Diese Woche",
+          "text": "Meisterschaft der Region Moskau im Ringen (Freistilringen) für Junioren unter 24 Jahren",
+          "info_line": {
+            "1": "17. März, 14:00 Uhr",
+            "2": "Moskau, Russland",
+            "3": "5 Spiele"
+          }
+        },
+        "2": {
+          "period_title": "Nächste Woche",
+          "text": "Griechisch-römischer Ringkampfwettbewerb für Jungen unter 16 Jahren zum Gedenken an den ZTSSSR V.A. Borman zu Ehren seines Geburtstages",
+          "info_line": {
+            "1": "21. Februar, 08:30 Uhr",
+            "2": "Moskau, Russland",
+            "3": "10 Spiele"
+          }
+        }
+      },
+      "current": {
+        "1": {
+          "period_title": "Heute",
+          "text": "Meisterschaft der Region Moskau im Ringen (Freistilringen) für Junioren unter 24 Jahren",
+          "info_line": {
+            "1": "11. März, 18:00 Uhr",
+            "2": "Uljanowsk, Russland",
+            "3": "8 Spiele"
+          }
+        },
+        "2": {
+          "period_title": "Morgen",
+          "text": "Griechisch-römischer Ringkampfwettbewerb für Jungen unter 16 Jahren zum Gedenken an den ZTSSSR V.A. Borman zu Ehren seines Geburtstages",
+          "info_line": {
+            "1": "12. März, 12:00 Uhr",
+            "2": "Moskau, Russland",
+            "3": "5 Spiele"
+          }
+        }
+      },
+      "past": {
+        "1": {
+          "period_title": "Letzten Monat",
+          "text": "Meisterschaft der Republik Tatarstan im Ringen (Freistilringen) für Junioren unter 24 Jahren",
+          "info_line": {
+            "1": "30. Januar, 18:00 Uhr",
+            "2": "Kasan, Russland",
+            "3": "10 Spiele"
+          }
+        }
+      }
+    },
+    "participants": "Teilnehmer",
+    "buttons": {
+      "take_part": "Teilnehmen",
+      "buy_ticket": "Ein Ticket kaufen"
     }
   },
   "profile_section": {
@@ -91,5 +151,59 @@
     "person_1": "Präsident der FNTR",
     "person_2": "Vizepräsident der FNTR",
     "person_3": "Erster Vizepräsident, Generaldirektor der FNTR"
+  },
+  "sportsmen_section": {
+    "header": "Sportler",
+    "men": "Männer",
+    "women": "Frauen",
+    "person_1": "Olympiamedaillengewinner, zweifacher Weltmeisterschaftsmedaillengewinner",
+    "person_2": "Zweifacher Weltmeister",
+    "person_3": "Olympiamedaillengewinner, zweifacher Weltmeisterschaftsmedaillengewinner",
+    "person_4": "Meister des Sports der UdSSR von internationaler Klasse, geehrter Trainer der UdSSR im griechisch-römischen Ringen",
+    "person_5": "Olympiamedaillengewinner, zweifacher Weltmeisterschaftsmedaillengewinner"
+  },
+  "trainer_section": {
+    "header": "Trainer",
+    "person_1": "Verdienter Handballtrainer der Russischen Föderation",
+    "person_2": "Griechisch-römischer Ringtrainer",
+    "person_3": "Griechisch-römischer und Beach-Wrestling-Trainer"
+  },
+  "result_section": {
+    "header": "Ergebnisse",
+    "data": {
+      "1": {
+        "title": "Meisterschaft der Region Moskau im Ringen (Freistilringen) der Junioren",
+        "info_line": {
+          "1": "17. März, 14:00 Uhr",
+          "2": "Moskau, Russland",
+          "3": "5 Spiele"
+        }
+      },
+      "2": {
+        "title": "Griechisch-römischer Ringkampf für Jungen unter 16 Jahren zum Gedenken an den ZTSSSR V.A. Borman",
+        "info_line": {
+          "1": "17. März, 14:00 Uhr",
+          "2": "St. Petersburg, Russland",
+          "3": "10 Spiele"
+        }
+      }
+    }
+  },
+  "news_section": {
+    "header": "Nachrichten",
+    "data": {
+      "1": {
+        "date": "12. März 2024 um 16:03",
+        "title": "Ilya Bessonov gab ein Interview für den Fernsehsender Russia-1"
+      },
+      "2": {
+        "date": "24. Februar 2024 um 15:55",
+        "title": "Ergebnisse der ersten Runde der Gewichthebermeisterschaft"
+      },
+      "3": {
+        "date": "14. Januar 2024 um 17:23",
+        "title": "Die letzte Trainingseinheit fand vor dem letzten Handballspiel statt"
+      }
+    }
   }
 }

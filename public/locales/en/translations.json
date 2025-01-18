@@ -23,16 +23,76 @@
     "show_all": "Show all",
     "show_all_persons": "Show all"
   },
+  "rating_data": {
+    "points": "points",
+    "sportsman": "Sportsman",
+    "rating": "Rating"
+  },
   "organization_title": "Sports Organization Of Altai Krai",
   "competition_section": {
+    "header": "Competitions",
     "tabs": {
       "future_data": "Upcoming",
       "current_data": "Current",
       "past_data": "Past"
     },
-    "period_title": {
-      "this_week": "This week",
-      "next_week": "Next week"
+    "data": {
+      "future": {
+        "1": {
+          "period_title": "This week",
+          "text": "Moscow Region Championship in Wrestling (Freestyle Wrestling) among Juniors Under 24",
+          "info_line": {
+            "1": "March 17, 14:00",
+            "2": "Moscow, Russia",
+            "3": "5 matches"
+          }
+        },
+        "2": {
+          "period_title": "Next week",
+          "text": "Greco-Roman wrestling competition among young men under 16 years old in memory of the West TSSSR V.A. Borman in honor of his birthday",
+          "info_line": {
+            "1": "February 21, 08:30",
+            "2": "Moscow, Russia",
+            "3": "10 matches"
+          }
+        }
+      },
+      "current": {
+        "1": {
+          "period_title": "Today",
+          "text": "Moscow Region Championship in Wrestling (Freestyle Wrestling) among Juniors Under 24",
+          "info_line": {
+            "1": "March 11, 18:00",
+            "2": "Ulyanovsk, Russia",
+            "3": "8 matches"
+          }
+        },
+        "2": {
+          "period_title": "Tomorrow",
+          "text": "Greco-Roman wrestling competition among young men under 16 years old in memory of the West TSSSR V.A. Borman in honor of his birthday",
+          "info_line": {
+            "1": "March 12, 12:00",
+            "2": "Moscow, Russia",
+            "3": "5 matches"
+          }
+        }
+      },
+      "past": {
+        "1": {
+          "period_title": "Last month",
+          "text": "Championship of the Republic of Tatarstan in wrestling (freestyle wrestling) among juniors under 24 years old",
+          "info_line": {
+            "1": "January 30, 18:00",
+            "2": "Kazan, Russia",
+            "3": "10 matches"
+          }
+        }
+      }
+    },
+    "participants": "Participants",
+    "buttons": {
+      "take_part": "Take a part",
+      "buy_ticket": "Buy a ticket"
     }
   },
   "profile_section": {
@@ -91,5 +151,59 @@
     "person_1": "President of FNTR",
     "person_2": "Vice president of FNTR",
     "person_3": "First vice president, general director of FNTR"
+  },
+  "sportsmen_section": {
+    "header": "Sportsmen",
+    "men": "Men",
+    "women": "Women",
+    "person_1": "Olympic medalist, two-time world championship medalist",
+    "person_2": "Two-time world champion",
+    "person_3": "Olympic medalist, two-time world championship medalist",
+    "person_4": "Master of Sports of the USSR of International Class, Honored Coach of the USSR in Greco-Roman Wrestling",
+    "person_5": "Olympic medalist, two-time world championship medalist"
+  },
+  "trainer_section": {
+    "header": "Coaches",
+    "person_1": "Honored coach of the Russian Federation in handball",
+    "person_2": "Greco-Roman Wrestling coach",
+    "person_3": "Greco-Roman and Beach Wrestling coach"
+  },
+  "result_section": {
+    "header": "Results",
+    "data": {
+      "1": {
+        "title": "Moscow Region Championship in Wrestling (Freestyle Wrestling) Among Juniors",
+        "info_line": {
+          "1": "March 17, 14:00",
+          "2": "Moscow, Russia",
+          "3": "5 matches"
+        }
+      },
+      "2": {
+        "title": "Greco-Roman wrestling competition among young men under 16 years old in memory of the ZTSSSR V.A.Borman",
+        "info_line": {
+          "1": "March 17, 14:00",
+          "2": "Saint Petersburg, Russia",
+          "3": "10 matches"
+        }
+      }
+    }
+  },
+  "news_section": {
+    "header": "News",
+    "data": {
+      "1": {
+        "date": "March 12, 2024 at 4:03",
+        "title": "Ilya Bessonov gave an interview for the Russia-1 TV channel"
+      },
+      "2": {
+        "date": "February 24, 2024 at 15:55",
+        "title": "Results of the first round of the weightlifting championship"
+      },
+      "3": {
+        "date": "January 14, 2024 at 5:23 PM",
+        "title": "The last training session before the final handball match took place"
+      }
+    }
   }
 }
