@@ -13,7 +13,7 @@ export const PhotoSection = () => {
           ))}
         </div>
         <Flex justify="flex-end">
-          <ForwardBox name="смотреть все" url="/photos" />
+          <ForwardBox name="forward_box.show_all" url="/photos" />
         </Flex>
       </Flex>
     </section>

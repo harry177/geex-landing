@@ -1,17 +1,17 @@
 export const managementData = [
   {
     name: "Дмитрий Пономарев",
-    position: "Президент ФНТР",
+    position: "management_section.person_1",
     image: "persons/person-1.png",
   },
   {
     name: "Кристина Козлова",
-    position: "Вице-президент ФНТР",
+    position: "management_section.person_2",
     image: "persons/person-2.png",
   },
   {
     name: "Андрей Козлов",
-    position: "Первый вице-президент, генеральный директор ФНТР",
+    position: "management_section.person_3",
     image: "persons/person-3.png",
   },
 ];

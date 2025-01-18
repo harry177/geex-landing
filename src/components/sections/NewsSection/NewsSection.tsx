@@ -11,7 +11,7 @@ export const NewsSection = () => {
         <Carousel type="news" data={carouselNewsData} />
       </Flex>
       <ForwardBox
-        name="Смотреть все"
+        name="forward_box.show_all"
         url="/news"
         className="forward-box__news"
       />

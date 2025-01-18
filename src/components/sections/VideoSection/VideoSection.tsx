@@ -10,7 +10,7 @@ export const VideoSection = () => {
         <Carousel type="video" data={carouselVideoData} />
         
           <ForwardBox
-            name="Смотреть все"
+            name="forward_box.show_all"
             url="/videos"
             className="forward-box__video"
           />
