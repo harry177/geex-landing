@@ -5,35 +5,35 @@ export const carouselStreamData: CarouselDataTypes[] = [
   {
     image: "carousel-image.jpg",
     title:
-      "День 6, Ковер C | Первенство Европы по спортивной борьбе U-23| 20-26 мая, Баку (Азербайджан).",
+      "stream_section.data.1.title",
     banner: "current",
     company: {
       image: "profile-logo.png",
-      name: "Спортивная Организация Алтайского Края",
-      watchers: "82 тыс.",
+      name: "organization_title",
+      watchers: "stream_section.data.1.info_line.1",
       date: "",
     },
   },
   {
     image: "carousel-image.jpg",
     title:
-      "День 7, Ковер C | Первенство Европы по спортивной борьбе U-23| 20-26 мая, Баку (Азербайджан).",
+      "stream_section.data.2.title",
     banner: "paid",
     company: {
       image: "profile-logo.png",
-      name: "Спортивная Организация Алтайского Края",
-      watchers: "120 тыс.",
-      date: "4 дня назад",
+      name: "organization_title",
+      watchers: "stream_section.data.2.info_line.1",
+      date: "stream_section.data.2.info_line.2",
     },
   },
   {
     image: "carousel-image.jpg",
-    title: "Грэпплинг, Женщины | 2024 Май, весовые категории 60-80",
+    title: "stream_section.data.3.title",
     company: {
       image: "profile-logo.png",
-      name: "Спортивная Организация Алтайского Края",
-      watchers: "5 тыс.",
-      date: "10 дней назад",
+      name: "organization_title",
+      watchers: "stream_section.data.3.info_line.1",
+      date: "stream_section.data.3.info_line.2",
     },
   },
 ];

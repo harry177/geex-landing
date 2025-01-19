@@ -19,6 +19,7 @@
       "exit": "Exit"
     }
   },
+  "404_content": "There is nothing here: 404!",
   "forward_box": {
     "show_all": "Show all",
     "show_all_persons": "Show all"
@@ -203,6 +204,57 @@
       "3": {
         "date": "January 14, 2024 at 5:23 PM",
         "title": "The last training session before the final handball match took place"
+      }
+    }
+  },
+  "media_section_frame": {
+    "tabs": {
+      "streams": "Streams",
+      "photos": "Photos",
+      "videos": "Videos"
+    }
+  },
+  "stream_section": {
+    "data": {
+      "1": {
+        "info_line": {
+          "1": "82 thous."
+        },
+        "title": "Day 6, Carpet C | European Championship in Wrestling U-23 | May 20-26, Baku (Azerbaijan)."
+      },
+      "2": {
+        "info_line": {
+          "1": "120 thous.",
+          "2": "4 days ago"
+        },
+        "title": "Day 7, Carpet C | European Championship in Wrestling U-23 | May 20-26, Baku (Azerbaijan)."
+      },
+      "3": {
+        "info_line": {
+          "1": "5 thous.",
+          "2": "10 days ago"
+        },
+        "title": "Grappling, Women | 2024 May, weight classes 60-80"
+      }
+    },
+    "banner": {
+      "current": "On air",
+      "paid": "Paid broadcast"
+    }
+  },
+  "video_section": {
+    "data": {
+      "1": {
+        "banner": "4.1 thous."
+      },
+      "2": {
+        "banner": "392"
+      },
+      "3": {
+        "banner": "72.8 thous."
+      },
+      "4": {
+        "banner": "5"
       }
     }
   }

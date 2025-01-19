@@ -5,7 +5,7 @@ export const carouselVideoData: CarouselDataTypes[] = [
     image: "videos/video-picture-11.jpg",
     banner: "video",
     bannerDetails: {
-      watch: "4.1 тыс.",
+      watch: "video_section.data.1.banner",
       time: "04:15",
     },
   },
@@ -13,7 +13,7 @@ export const carouselVideoData: CarouselDataTypes[] = [
     image: "videos/video-picture-2.webp",
     banner: "video",
     bannerDetails: {
-      watch: "392",
+      watch: "video_section.data.2.banner",
       time: "03:10",
     },
   },
@@ -21,7 +21,7 @@ export const carouselVideoData: CarouselDataTypes[] = [
     image: "videos/video-picture-3.webp",
     banner: "video",
     bannerDetails: {
-      watch: "72.8 тыс.",
+      watch: "video_section.data.3.banner",
       time: "02:01",
     },
   },
@@ -29,7 +29,7 @@ export const carouselVideoData: CarouselDataTypes[] = [
     image: "videos/video-picture-4.webp",
     banner: "video",
     bannerDetails: {
-      watch: "5",
+      watch: "video_section.data.4.banner",
       time: "00:56",
     },
   },

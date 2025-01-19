@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Flex } from "../ui/Flex/Flex";
 import { TabButton } from "../ui/TabButton/TabButton";
 import { StreamSection } from "../sections/StreamSection/StreamSection";
@@ -6,16 +7,18 @@ import { PhotoSection } from "../sections/PhotoSection/PhotoSection";
 import { VideoSection } from "../sections/VideoSection/VideoSection";
 
 export const MediaSectionFrame = () => {
-  const [activeTab, setActiveTab] = useState("Трансляции");
+  const [activeTab, setActiveTab] = useState("media_section_frame.tabs.streams");
+
+  const { t } = useTranslation();
 
   const handleTabClick = (tabItem: string) => {
     setActiveTab(tabItem);
   };
 
   const mediaTabs = [
-    { name: "Трансляции", amount: 4, component: <StreamSection /> },
-    { name: "Фото", amount: 14, component: <PhotoSection /> },
-    { name: "Видео", amount: 35, component: <VideoSection /> },
+    { name: "media_section_frame.tabs.streams", amount: 4, component: <StreamSection /> },
+    { name: "media_section_frame.tabs.photos", amount: 14, component: <PhotoSection /> },
+    { name: "media_section_frame.tabs.videos", amount: 35, component: <VideoSection /> },
   ];
 
   return (
@@ -25,7 +28,7 @@ export const MediaSectionFrame = () => {
           {mediaTabs.map((tab, index) => (
             <TabButton
               key={index}
-              name={tab.name}
+              name={t(tab.name)}
               amount={tab.amount}
               isActive={activeTab === tab.name}
               onClick={() => handleTabClick(tab.name)}

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { CarouselDataTypes } from "../Carousel/Carousel";
 import { DotInfoLine } from "../ui/DotInfoLine/DotInfoLine";
 import { Flex } from "../ui/Flex/Flex";
@@ -9,6 +10,8 @@ export const CarouselStreamItem = ({
   banner,
   company,
 }: CarouselDataTypes) => {
+  const { t } = useTranslation();
+
   return (
     <article className="carousel__stream-item gap-14">
       <div>
@@ -24,15 +27,24 @@ export const CarouselStreamItem = ({
             }`}
           >
             {banner === "paid" && <img src="banknote.svg"></img>}
-            {banner === "current" ? "В эфире" : "Платный эфир"}
+            {banner === "current"
+              ? t("stream_section.banner.current")
+              : t("stream_section.banner.paid")}
           </Flex>
         )}
       </div>
-      <div className="carousel__stream-item__title-box">{title}</div>
+      <div className="carousel__stream-item__title-box">
+        {title && t(title)}
+      </div>
       <Flex>
-        <img src={company?.image} className="carousel-item__company-image"></img>
+        <img
+          src={company?.image}
+          className="carousel-item__company-image"
+        ></img>
         <Flex column>
-          <div className="carousel-item__company-name">{company?.name}</div>
+          <div className="carousel-item__company-name">
+            {company && t(company.name)}
+          </div>
           <DotInfoLine
             data={[
               {

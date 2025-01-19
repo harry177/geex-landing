@@ -19,6 +19,7 @@
       "exit": "Ausgang"
     }
   },
+  "404_content": "Hier steht nichts: 404!",
   "forward_box": {
     "show_all": "Alle anzeigen",
     "show_all_persons": "Alle anzeigen"
@@ -203,6 +204,57 @@
       "3": {
         "date": "14. Januar 2024 um 17:23",
         "title": "Die letzte Trainingseinheit fand vor dem letzten Handballspiel statt"
+      }
+    }
+  },
+  "media_section_frame": {
+    "tabs": {
+      "streams": "Sendungen",
+      "photos": "Fotos",
+      "videos": "Videos"
+    }
+  },
+  "stream_section": {
+    "data": {
+      "1": {
+        "info_line": {
+          "1": "82 Taus."
+        },
+        "title": "Tag 6, Teppich C | Europameisterschaft im Ringen U-23| 20.-26. Mai, Baku (Aserbaidschan)."
+      },
+      "2": {
+        "info_line": {
+          "1": "120 Taus.",
+          "2": "Vor 4 Tagen"
+        },
+        "title": "Tag 7, Teppich C | Europameisterschaft im Ringen U-23| 20.-26. Mai, Baku (Aserbaidschan)."
+      },
+      "3": {
+        "info_line": {
+          "1": "5 Taus.",
+          "2": "Vor 10 Tagen"
+        },
+        "title": "Grappling, Frauen | 2024 Mai, Gewichtsklassen 60-80"
+      }
+    },
+    "banner": {
+      "current": "Auf Sendung",
+      "paid": "Bezahlte Sendung"
+    }
+  },
+  "video_section": {
+    "data": {
+      "1": {
+        "banner": "4.1 Taus."
+      },
+      "2": {
+        "banner": "392"
+      },
+      "3": {
+        "banner": "72.8 Taus."
+      },
+      "4": {
+        "banner": "5"
       }
     }
   }
