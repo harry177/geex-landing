@@ -1,22 +1,42 @@
+@use "/src/_variables" as *;
+
 .content {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-family: "Inter";
+
+  @include responsive("medium") {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  @include responsive("large") {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
-.content-left {
+.content-main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 65.95%;
+  max-width: 765px;
 }
 
-.content-right {
+.content-aside {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 31.98%;
+
+  @include responsive("medium") {
+    width: 765px;
+  }
+
+  @include responsive("large") {
+    width: 370.96px;
+  }
 }
 
 .page-section {

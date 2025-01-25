@@ -1,9 +1,12 @@
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "../../../hooks/useMediaQuery";
 import { Flex } from "../../ui/Flex/Flex";
 import "./rating-section.scss";
 
 export const RatingSection = () => {
   const { t } = useTranslation();
+
+  const tablet = useMediaQuery("(max-width: 1170px)");
 
   function drawImageOnCanvas(
     canvas: HTMLCanvasElement | null,
@@ -41,16 +44,18 @@ export const RatingSection = () => {
     <section className="page-section">
       <Flex column align="flex-start" className="gap-20">
         <h3 className="section-title">{t("rating_section.header")}</h3>
-        <Flex justify="center" align="center" className="graph-container">
-          <canvas
-            ref={(canvas) => drawImageOnCanvas(canvas, "graph.svg")}
-            className="canvas"
-          ></canvas>
+        <Flex column={!tablet} className="gap-20">
+          <Flex justify="center" align="center" className="graph-container">
+            <canvas
+              ref={(canvas) => drawImageOnCanvas(canvas, "graph.svg")}
+              className="canvas"
+            ></canvas>
+          </Flex>
+          <article className="rating-content">
+            <p>{t("rating_section.title")}</p>
+            <span>{t("rating_section.text")}</span>
+          </article>
         </Flex>
-        <article className="rating-content">
-          <p>{t("rating_section.title")}</p>
-          <span>{t("rating_section.text")}</span>
-        </article>
       </Flex>
     </section>
   );

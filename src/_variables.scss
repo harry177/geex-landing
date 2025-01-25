@@ -1,0 +1,19 @@
+@use "sass:map";
+
+$mobile: 568px;
+$tablet: 768px;
+$desktop: 1170px;
+
+$breakpoints: (
+  small: $mobile,
+  medium: $tablet,
+  large: $desktop,
+);
+
+@mixin responsive($size) {
+  $query: map.get($breakpoints, $size);
+
+  @media only screen and (min-width: $query) {
+    @content;
+  }
+}

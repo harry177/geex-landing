@@ -20,15 +20,15 @@ export const ProfilePopup = () => {
             <span>{profilePopupData.email.content}</span>
           </article>
         </Flex>
-        <article className="popup-block">
+        <article className="popup-block popup__block-big">
           <p>{t(profilePopupData.address.title)}</p>
           <span>{t(profilePopupData.address.content)}</span>
         </article>
-        <article className="popup-block">
+        <article className="popup-block popup__block-big">
           <p>{t(profilePopupData.about.title)}</p>
           <span>{t(profilePopupData.about.content)}</span>
         </article>
-        <Flex>
+        <Flex className="gap-12">
           <article className="popup-block popup__block-small">
             <p>{t(profilePopupData.president.title)}</p>
             <span>{profilePopupData.president.content}</span>
@@ -38,11 +38,11 @@ export const ProfilePopup = () => {
             <span>{profilePopupData.responsible.content}</span>
           </article>
         </Flex>
-        <article className="popup-block">
+        <article className="popup-block popup__block-big">
           <p>{t(profilePopupData.site.title)}</p>
           <span>{profilePopupData.site.content}</span>
         </article>
-        <article className="popup-block">
+        <article className="popup-block popup__block-big">
           <p>{t(profilePopupData.time.title)}</p>
           <span>{t(profilePopupData.time.content)}</span>
         </article>

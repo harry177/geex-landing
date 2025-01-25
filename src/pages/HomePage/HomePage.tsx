@@ -21,14 +21,14 @@ export const HomePage = () => {
   return (
     <>
       <div className="content">
-        <div className="content-left">
+        <div className="content-main">
           <ProfileSection onTabChange={handleTabChange} />
           {activeTab === PROFILE_TAB_KEYS.COMPETITIONS && <CompetitionSection />}
           {activeTab === PROFILE_TAB_KEYS.RESULTS && <ResultSection />}
           {activeTab === PROFILE_TAB_KEYS.NEWS && <NewsSection />}
           <MediaSectionFrame />
         </div>
-        <div className="content-right">
+        <div className="content-aside">
           <RatingSection />
           <ManagementSection />
           <SportsmenSection />

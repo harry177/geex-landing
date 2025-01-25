@@ -4,9 +4,9 @@ import { Flex } from "../../ui/Flex/Flex";
 import { ForwardBox } from "../../ui/ForwardBox/ForwardBox";
 import { TabButton } from "../../ui/TabButton/TabButton";
 import { PersonItem } from "../../PersonItem/PersonItem";
-import { sportsmenData } from "./data";
 import { PersonTabButton } from "../../PersonTabButton/PersonTabButton";
 import { WinnerItem } from "../../WinnerItem/WinnerItem";
+import { sportsmenData } from "./data";
 import "./sportsmen-section.scss";
 
 export const SportsmenSection = () => {
@@ -30,7 +30,7 @@ export const SportsmenSection = () => {
           <h3 className="section-title">{t("sportsmen_section.header")}</h3>
           <ForwardBox name="forward_box.show_all_persons" url="/sportsmen" />
         </Flex>
-        <Flex className="gap-16">
+        <Flex justify="center" className="w-full gap-16">
           {Array.from([{ name: "sportsmen_section.men" }, { name: "sportsmen_section.women" }]).map(
             (item, index) => (
               <TabButton
@@ -43,7 +43,7 @@ export const SportsmenSection = () => {
             )
           )}
         </Flex>
-        <Flex className="gap-6">
+        <Flex justify="center" className="w-full gap-6">
           {Array.from([
             { name: "57 kg" },
             { name: "61 kg" },

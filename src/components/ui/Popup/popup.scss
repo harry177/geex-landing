@@ -26,7 +26,7 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
-  max-width: 80%;
+  max-width: 766px;
   max-height: 80%;
   z-index: 1000;
 }
@@ -53,6 +53,10 @@
   }
 }
 
+.popup__block-big {
+  width: 95.5%;
+}
+
 .popup__block-small {
-  width: 50%;
+  width: 47%;
 }
