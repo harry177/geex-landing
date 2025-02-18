@@ -1,10 +1,12 @@
 @use "sass:map";
 
-$mobile: 568px;
+$xsmobile: 320px;
+$mobile: 400px;
 $tablet: 768px;
 $desktop: 1170px;
 
 $breakpoints: (
+  tiny: $xsmobile,
   small: $mobile,
   medium: $tablet,
   large: $desktop,

@@ -45,7 +45,6 @@ export const TrainerSection = () => {
                 arrow={item.arrow}
                 rating={item.rating}
                 medal={item.medal}
-                contentClassName="trainer-content"
                 textClassName="trainer-text"
               />
             )

@@ -1,3 +1,5 @@
+@use "/src/_variables" as *;
+
 p {
   font-weight: 548;
   font-size: 14px;
@@ -45,6 +47,14 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 2px;
+
+  @include responsive("tiny") {
+    width: 140px;
+  }
+
+  @include responsive("small") {
+    width: 160px;
+  }
 }
 
 .person-item__arrow {

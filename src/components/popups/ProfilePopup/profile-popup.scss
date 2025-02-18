@@ -1,8 +1,21 @@
+@use "/src/_variables" as *;
+
 .company-profile__popup {
-  width: 740px;
   height: 500px;
   overflow-x: hidden;
   overflow-y: auto;
+
+  @include responsive("tiny") {
+    width: 285px;
+  }
+
+  @include responsive("small") {
+    width: 340px;
+  }
+
+  @include responsive("medium") {
+    width: 740px;
+  }
 
   &::-webkit-scrollbar {
     width: 6px;

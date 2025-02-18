@@ -1,9 +1,18 @@
+@use "/src/_variables" as *;
+
 .grid-container {
   height: 430px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, auto);
   grid-gap: 8px;
+
+  @include responsive("tiny") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include responsive("medium") {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 .grid-item {
@@ -12,13 +21,15 @@
   border-radius: 14px;
   cursor: pointer;
 
-  &:first-child {
-    grid-column: 1/3;
-    grid-row: 1/3;
-  }
+  @include responsive("medium") {
+    &:first-child {
+      grid-column: 1/3;
+      grid-row: 1/3;
+    }
 
-  &:last-child {
-    grid-column: 4/6;
-    grid-row: 2/4;
+    &:last-child {
+      grid-column: 4/6;
+      grid-row: 2/4;
+    }
   }
 }

@@ -1,3 +1,5 @@
+@use "/src/_variables" as *;
+
 .winner-item {
   position: relative;
   width: 100%;
@@ -6,6 +8,14 @@
   padding: 16px;
   box-sizing: border-box;
   color: #ffffff;
+
+  @include responsive("tiny") {
+    height: 160px;
+  }
+
+  @include responsive("small") {
+    height: 137px;
+  }
 }
 
 .winner-item__red {

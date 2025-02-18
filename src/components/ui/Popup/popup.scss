@@ -1,3 +1,5 @@
+@use "/src/_variables" as *;
+
 .popup-wrapper {
   position: fixed;
   top: 0;
@@ -26,9 +28,20 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
-  max-width: 766px;
   max-height: 80%;
   z-index: 1000;
+
+  @include responsive("tiny") {
+    max-width: 320px;
+  }
+
+  @include responsive("small") {
+    max-width: 371px;
+  }
+
+  @include responsive("medium") {
+    max-width: 766px;
+  }
 }
 
 .popup-block {
@@ -58,5 +71,11 @@
 }
 
 .popup__block-small {
-  width: 47%;
+  @include responsive("tiny") {
+    width: 95.5%;
+  }
+
+  @include responsive("medium") {
+    width: 47%;
+  }
 }

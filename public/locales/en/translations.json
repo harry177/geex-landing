@@ -29,6 +29,8 @@
     "sportsman": "Sportsman",
     "rating": "Rating"
   },
+  "admin": "Admin",
+  "organization": "Organization",
   "organization_title": "Sports Organization Of Altai Krai",
   "competition_section": {
     "header": "Competitions",

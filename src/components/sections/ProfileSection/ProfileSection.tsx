@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "../../../hooks/useMediaQuery";
 import { Avatar } from "../../ui/Avatar/Avatar";
 import { Button } from "../../ui/Button/Button";
 import { Flex } from "../../ui/Flex/Flex";
@@ -14,7 +15,6 @@ import { profileInfoLine, profileMembers } from "./data";
 import { PROFILE_TAB_KEYS } from "./constants";
 import "./profile-section.scss";
 
-
 interface ProfileSectionProps {
   onTabChange: (tabName: string) => void;
 }
@@ -24,6 +24,8 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
   const [activeTab, setActiveTab] = useState(0);
 
   const { t } = useTranslation();
+
+  const mobile = useMediaQuery("(max-width: 768px)");
 
   const togglePopup = () => {
     setIsPopupOpen(!isPopupOpen);
@@ -43,7 +45,10 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
           </div>
         </div>
         <Flex justify="flex-end">
-          <Tooltip content={RatingBoxContent()} position="down-right">
+          <Tooltip
+            content={RatingBoxContent()}
+            positionClassname="tooltip-down-right"
+          >
             <div className="rating-box">
               <img src="green-up-arrow.svg"></img>
               <span>№2</span>
@@ -53,7 +58,10 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
         <Flex column gap="16px" className="profile__info-container">
           <Flex align="center" gap="8px" className="profile__title-container">
             <h1 className="profile-title">{t("organization_title")}</h1>
-            <Tooltip content={CheckmarkContent()} position="up">
+            <Tooltip
+              content={CheckmarkContent()}
+              positionClassname={mobile ? "tooltip-up-right" : "tooltip-up"}
+            >
               <Flex align="flex-end">
                 <img
                   src="title-checkmark.png"
@@ -115,7 +123,12 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
           </Button>
           <Button variant="secondary" thin icon="./forward-arrow-icon.svg" />
         </Flex>
-        <Flex gap="16px" className="profile__tabs-container">
+        <Flex
+          justify={"space-between"}
+          className={`${
+            !mobile ? "gap-16" : "w-section"
+          } profile__tabs-container`}
+        >
           {Array.from([
             PROFILE_TAB_KEYS.COMPETITIONS,
             PROFILE_TAB_KEYS.RESULTS,

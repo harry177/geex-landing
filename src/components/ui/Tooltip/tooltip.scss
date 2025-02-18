@@ -50,16 +50,30 @@
   }
 }
 
-.tooltip-down-right {
-    top: calc(100% + 12px);
-    left: 100%;
-    transform: translateX(-100%);
-  
-    &:before {
-      left: 90%;
-      top: -8px;
-      transform: translateX(-90%);
-      border-width: 0 8px 8px 8px;
-      border-color: transparent transparent rgba(0, 0, 0, 0.6) transparent;
-    }
+.tooltip-up-right {
+  bottom: calc(100% + 12px);
+  left: 95%;
+  transform: translateX(-95%);
+
+  &:before {
+    left: 93%;
+    bottom: -8px;
+    transform: translateX(-93%);
+    border-width: 8px 8px 0 8px;
+    border-color: rgba(0, 0, 0, 0.6) transparent transparent transparent;
   }
+}
+
+.tooltip-down-right {
+  top: calc(100% + 12px);
+  left: 100%;
+  transform: translateX(-100%);
+
+  &:before {
+    left: 90%;
+    top: -8px;
+    transform: translateX(-90%);
+    border-width: 0 8px 8px 8px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.6) transparent;
+  }
+}

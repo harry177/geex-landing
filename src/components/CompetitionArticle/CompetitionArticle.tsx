@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { CompetitionArticleProps } from "../sections/CompetitionSection/data";
 import { Avatar } from "../ui/Avatar/Avatar";
 import { Button } from "../ui/Button/Button";
@@ -15,13 +16,15 @@ export const CompetitionArticle = ({
 }: CompetitionArticleProps) => {
   const { t } = useTranslation();
 
+  const mobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <Flex column className="gap-20">
       <p className="article-section__title">{t(periodTitle)}</p>
-      <Flex className="gap-12">
+      <Flex column={mobile} className="gap-12">
         <img src={image} className="comp-article__image"></img>
         <Flex column className="gap-11">
-          <Flex justify="space-between">
+          <Flex justify="space-between" align="flex-start">
             <DotInfoLine data={lineData} gap={12} />
             <img src="bell-filled-icon.svg" />
           </Flex>

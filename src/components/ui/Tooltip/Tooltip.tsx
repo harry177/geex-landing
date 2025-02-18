@@ -3,11 +3,15 @@ import "./tooltip.scss";
 
 interface TooltipProps {
   content: ReactNode;
-  position: "up" | "down" | "down-right";
   children: ReactNode;
+  positionClassname: string;
 }
 
-export const Tooltip = ({ content, position, children }: TooltipProps) => {
+export const Tooltip = ({
+  content,
+  children,
+  positionClassname,
+}: TooltipProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleMouseEnter = () => {
@@ -24,17 +28,7 @@ export const Tooltip = ({ content, position, children }: TooltipProps) => {
       onMouseLeave={handleMouseLeave}
     >
       {isVisible && (
-        <div
-          className={`tooltip ${
-            position === "up"
-              ? "tooltip-up"
-              : position === "down"
-              ? "tooltip-down"
-              : "tooltip-down-right"
-          }`}
-        >
-          {content}
-        </div>
+        <div className={`tooltip ${positionClassname}`}>{content}</div>
       )}
       {children}
     </div>

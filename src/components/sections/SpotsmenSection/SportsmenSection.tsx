@@ -91,7 +91,6 @@ export const SportsmenSection = () => {
                 arrow={item.arrow}
                 rating={item.rating}
                 medal={item.medal}
-                contentClassName="sportsmen-content"
                 textClassName="sportsmen-text"
               />
             )

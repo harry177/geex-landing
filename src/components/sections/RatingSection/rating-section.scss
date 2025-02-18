@@ -1,7 +1,17 @@
+@use "/src/_variables" as *;
+
 .canvas {
-  width: 323px;
-  height: 186px;
   object-fit: cover;
+
+  @include responsive("tiny") {
+    width: 282px;
+    height: 160px;
+  }
+
+  @include responsive("small") {
+    width: 323px;
+    height: 186px;
+  }
 }
 
 .graph-container {

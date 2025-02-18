@@ -1,3 +1,5 @@
+@use "/src/_variables" as *;
+
 .tab-button {
   position: relative;
   display: flex;
@@ -5,7 +7,6 @@
   align-items: center;
   gap: 8px;
   min-height: 40px;
-  padding: 10px;
   color: #7b7ea5;
   background-color: transparent;
   font-weight: 548;
@@ -22,6 +23,18 @@
 
   &:disabled {
     color: #cccfda;
+  }
+
+  @include responsive("small") {
+    padding: 5px;
+  }
+
+  @include responsive("medium") {
+    padding: 10px;
+  }
+
+  @include responsive("large") {
+    padding: 10px;
   }
 }
 

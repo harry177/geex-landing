@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "../../../hooks/useMediaQuery";
 import { Flex } from "../../ui/Flex/Flex";
 import { profilePopupData } from "./data";
 import "./profile-popup.scss";
@@ -6,11 +7,13 @@ import "./profile-popup.scss";
 export const ProfilePopup = () => {
   const { t } = useTranslation();
 
+  const mobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <Flex column className="company-profile__popup">
       <p>{t(profilePopupData.header)}</p>
       <Flex column className="gap-32">
-        <Flex className="gap-12">
+        <Flex column={mobile} className="gap-12">
           <article className="popup-block popup__block-small">
             <p>{t(profilePopupData.phone.title)}</p>
             <span>{profilePopupData.phone.content}</span>
@@ -28,7 +31,7 @@ export const ProfilePopup = () => {
           <p>{t(profilePopupData.about.title)}</p>
           <span>{t(profilePopupData.about.content)}</span>
         </article>
-        <Flex className="gap-12">
+        <Flex column={mobile} className="gap-12">
           <article className="popup-block popup__block-small">
             <p>{t(profilePopupData.president.title)}</p>
             <span>{profilePopupData.president.content}</span>

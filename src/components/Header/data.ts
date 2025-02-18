@@ -16,12 +16,12 @@ import { BritainIcon } from "../../svg/BritainIcon";
 import { GermanyIcon } from "../../svg/GermanyIcon";
 
 export const navData = [
-  { page: "header.nav.feed", icon: HomeIcon, url: "/" },
-  { page: "header.nav.marketplace", icon: ShopperIcon, url: "marketplace" },
-  { page: "header.nav.ratings", icon: UsersIcon, url: "ratings" },
-  { page: "header.nav.competitions", icon: PrizeIcon, url: "competitions" },
-  { page: "header.nav.organizations", icon: OrganizationIcon, url: "organizations" },
-  { page: "header.nav.live", icon: StreamIcon, url: "streams" },
+  { section: "header.nav.feed", icon: HomeIcon, url: "/" },
+  { section: "header.nav.marketplace", icon: ShopperIcon, url: "/marketplace" },
+  { section: "header.nav.ratings", icon: UsersIcon, url: "/ratings" },
+  { section: "header.nav.competitions", icon: PrizeIcon, url: "/competitions" },
+  { section: "header.nav.organizations", icon: OrganizationIcon, url: "/organizations" },
+  { section: "header.nav.live", icon: StreamIcon, url: "/streams" },
 ];
 
 export const userData = [

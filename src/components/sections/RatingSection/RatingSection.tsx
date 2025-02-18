@@ -6,7 +6,7 @@ import "./rating-section.scss";
 export const RatingSection = () => {
   const { t } = useTranslation();
 
-  const tablet = useMediaQuery("(max-width: 1170px)");
+  const tablet = useMediaQuery("(min-width: 769px) and (max-width: 1170px)");
 
   function drawImageOnCanvas(
     canvas: HTMLCanvasElement | null,
