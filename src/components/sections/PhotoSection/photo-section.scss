@@ -1,7 +1,6 @@
 @use "/src/_variables" as *;
 
 .grid-container {
-  height: 430px;
   display: grid;
   grid-template-rows: repeat(3, auto);
   grid-gap: 8px;

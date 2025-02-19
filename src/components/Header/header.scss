@@ -17,14 +17,6 @@
     flex-direction: column;
   }
 
-  @include responsive("small") {
-    flex-direction: column;
-  }
-
-  @include responsive("medium") {
-    flex-direction: column;
-  }
-
   @include responsive("large") {
     flex-direction: row;
   }
@@ -48,15 +40,10 @@
   }
 
   @include responsive("small") {
-    flex-direction: column;
-    justify-content: center;
     max-width: 350px;
-    min-height: 52px;
   }
 
   @include responsive("medium") {
-    flex-direction: column;
-    justify-content: center;
     max-width: 768px;
     height: 128px;
   }
@@ -216,17 +203,26 @@
   flex-direction: column;
   background-color: #ffffff;
   width: 100%;
+  max-height: 70vh;
   z-index: 60;
+  overflow: scroll;
 }
 
 .header__mobile-section {
   display: flex;
   align-items: center;
   gap: 10px;
-  width: 320px;
   height: 70px;
   background-color: #ffffff;
   border-bottom: 1px solid #eef0f7;
+
+  @include responsive("tiny") {
+    width: 300px;
+  }
+
+  @include responsive("small") {
+    width: 350px;
+  }
 }
 
 .header__cross-button {

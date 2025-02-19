@@ -35,10 +35,6 @@
   @include responsive("medium") {
     max-width: 765px;
   }
-
-  @include responsive("large") {
-    max-width: 765px;
-  }
 }
 
 .content-aside {
