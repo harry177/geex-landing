@@ -19,6 +19,50 @@
       "exit": "Выйти"
     }
   },
+  "footer": {
+    "pages": {
+      "feed": {
+        "title": "Лента",
+        "last_news": "Последние новости",
+        "my_subscribtions": "Мои подписки",
+        "competitions_list": "Список соревнования",
+        "marketplace": "Маркетплейс"
+      },
+      "ratings": {
+        "title": "Рейтинги",
+        "sportsmen": "Спорсмены",
+        "referees": "Судьи",
+        "trainers": "Тренеры",
+        "viewers": "Зрители"
+      },
+      "competitions": {
+        "title": "Соревнования",
+        "upcoming": "Предстоящие",
+        "current": "Текущие",
+        "past": "Прошедшие"
+      },
+      "organizations": {
+        "title": "Организации"
+      },
+      "my_profile": {
+        "title": "Мой профиль",
+        "my_competitions": "Мои соревнования",
+        "payments_history": "История платежей",
+        "my_tickets": "Мои билеты",
+        "license": "Лицензия",
+        "settings": "Настройки"
+      }
+    },
+    "info": {
+      "conditions": {
+        "copyright": "Авторское право",
+        "terms_of_use": "Условия использования",
+        "privacy_policy": "Политика конфиденциальности",
+        "our_advertising": "Реклама у нас"
+      },
+      "rights": "Все права защищены"
+    }
+  },
   "404_content": "Здесь ничего нет: 404!",
   "forward_box": {
     "show_all": "Смотреть все",

@@ -19,6 +19,50 @@
       "exit": "Exit"
     }
   },
+  "footer": {
+    "pages": {
+      "feed": {
+        "title": "Feed",
+        "last_news": "Last news",
+        "my_subscribtions": "My subscibtions",
+        "competitions_list": "Competitions list",
+        "marketplace": "Marketplace"
+      },
+      "ratings": {
+        "title": "Ratings",
+        "sportsmen": "Sportsmen",
+        "referees": "Referees",
+        "trainers": "Trainers",
+        "viewers": "Viewers"
+      },
+      "competitions": {
+        "title": "Competitions",
+        "upcoming": "Upcoming",
+        "current": "Current",
+        "past": "Past"
+      },
+      "organizations": {
+        "title": "Organizations"
+      },
+      "my_profile": {
+        "title": "My profile",
+        "my_competitions": "My competitions",
+        "payments_history": "Payments history",
+        "my_tickets": "My tickets",
+        "license": "License",
+        "settings": "Settings"
+      }
+    },
+    "info": {
+      "conditions": {
+        "copyright": "Copyright",
+        "terms_of_use": "Terms of use",
+        "privacy_policy": "Privacy policy",
+        "our_advertising": "Our advertising"
+      },
+      "rights": "All rights reserved"
+    }
+  },
   "404_content": "There is nothing here: 404!",
   "forward_box": {
     "show_all": "Show all",

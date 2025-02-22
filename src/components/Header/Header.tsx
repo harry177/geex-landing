@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { HeaderNavItem } from "../HeaderNavItem/HeaderNavItem";
 import { HeaderDrops } from "../HeaderDrops/HeaderDrops";
 import { HeaderMobileSection } from "../HeaderMobileSection/HeaderMobileSection";
+import { Logo } from "../Logo/Logo";
 import { Avatar } from "../ui/Avatar/Avatar";
 import { DotInfoLine } from "../ui/DotInfoLine/DotInfoLine";
 import { Flex } from "../ui/Flex/Flex";
@@ -41,32 +41,21 @@ export const Header = () => {
   return (
     <header className="header">
       <Flex className="header-container">
-        {desktop && (
-          <Link to="/">
-            <Flex justify="center" align="center" className="logo-box">
-              <img src="logo.svg"></img>
-            </Flex>
-          </Link>
-        )}
+        {desktop && <Logo type="header" />}
         {tablet && (
           <Flex justify="space-between" className="header__tablet-layer">
-            <Link to="/">
-              <Flex justify="center" align="center" className="logo-box">
-                <img src="logo.svg"></img>
-              </Flex>
-            </Link>
+            <Logo type="header" />
             <HeaderDrops />
           </Flex>
         )}
         {mobile && (
           <>
             <Flex justify="space-between" className="header__tablet-layer">
-              <Link to="/">
-                <Flex justify="center" align="center" className="logo-box">
-                  <img src="logo.svg"></img>
-                </Flex>
-              </Link>
-              <button className="header__cross-button" onClick={toggleMobileHeader}>
+              <Logo type="header" />
+              <button
+                className="header__cross-button"
+                onClick={toggleMobileHeader}
+              >
                 <BurgerIcon isActive={isOpen} />
               </button>
             </Flex>

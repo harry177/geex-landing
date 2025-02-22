@@ -58,7 +58,11 @@
 
 .logo-box {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 8px 8px 11.5px;
+  width: fit-content;
   height: fit-content;
 
   &::after {

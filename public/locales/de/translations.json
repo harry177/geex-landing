@@ -19,6 +19,50 @@
       "exit": "Ausgang"
     }
   },
+  "footer": {
+    "pages": {
+      "feed": {
+        "title": "Feed",
+        "last_news": "Letzte Neuigkeiten",
+        "my_subscribtions": "Meine Abonnements",
+        "competitions_list": "Wettbewerbsliste",
+        "marketplace": "Markt"
+      },
+      "ratings": {
+        "title": "Bewertungen",
+        "sportsmen": "Sportler",
+        "referees": "Schiedsrichter",
+        "trainers": "Trainer",
+        "viewers": "Zuschauer"
+      },
+      "competitions": {
+        "title": "Wettbewerbe",
+        "upcoming": "Kommende",
+        "current": "Aktuelle",
+        "past": "Vergangene"
+      },
+      "organizations": {
+        "title": "Organisationen"
+      },
+      "my_profile": {
+        "title": "Mein Profil",
+        "my_competitions": "Meine Wettbewerbe",
+        "payments_history": "Zahlungshistorie",
+        "my_tickets": "Meine Tickets",
+        "license": "Lizenz",
+        "settings": "Einstellungen"
+      }
+    },
+    "info": {
+      "conditions": {
+        "copyright": "Copyright",
+        "terms_of_use": "Nutzungsbedingungen",
+        "privacy_policy": "Datenschutzrichtlinie",
+        "our_advertising": "Unsere Werbung"
+      },
+      "rights": "Alle Rechte vorbehalten"
+    }
+  },
   "404_content": "Hier steht nichts: 404!",
   "forward_box": {
     "show_all": "Alle anzeigen",
