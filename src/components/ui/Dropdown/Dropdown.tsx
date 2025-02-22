@@ -111,7 +111,7 @@ export const Dropdown = ({
               >
                 {item.icon &&
                   item.icon(hoveredItemIndex === index ? "#353754" : "#9395b8")}
-                {t(item.section)}
+                {dispatchedContent ? item.section : t(item.section)}
               </li>
             ))}
           </ul>

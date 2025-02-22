@@ -56,7 +56,9 @@ export const HeaderMobileSection = ({
         align="center"
         className="header__mobile-section"
       >
-        <Flex align="center" className="gap-10">{children}</Flex>
+        <Flex align="center" className="gap-10">
+          {children}
+        </Flex>
         <div className="chevron-box">
           <img
             src={`${isOpen ? "chevron-up.svg" : "chevron-down.svg"}`}
@@ -81,7 +83,7 @@ export const HeaderMobileSection = ({
                       : "dropdown-item__simple"
                   }
                 >
-                  {t(item.section)}
+                  {category === "lang" ? item.section : t(item.section)}
                 </p>
               </li>
             </Link>

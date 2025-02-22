@@ -6,7 +6,6 @@ interface HeaderNavItemProps {
   icon: (page: string) => ReactNode;
   url: string;
   isActive: boolean;
-  handleNavItemClick: () => void;
 }
 
 export const HeaderNavItem = ({
@@ -14,14 +13,12 @@ export const HeaderNavItem = ({
   icon,
   url,
   isActive,
-  handleNavItemClick,
 }: HeaderNavItemProps) => (
   <Link to={url}>
     <li
       className={`nav-list__item ${
         isActive ? "nav-list__item-active" : "nav-list__item-static"
       }`}
-      onClick={handleNavItemClick}
     >
       {typeof icon === "function" && icon(isActive ? "#06082c" : "#9395b8")}
       <p>{page}</p>

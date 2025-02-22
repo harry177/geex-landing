@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 import { HeaderNavItem } from "../HeaderNavItem/HeaderNavItem";
@@ -13,15 +14,23 @@ import { languageData, navData, userData } from "./data";
 import "./header.scss";
 
 export const Header = () => {
-  const [activePage, setActivePage] = useState(4);
+  const location = useLocation();
+  const { i18n, t } = useTranslation();
+
+  const [activePage, setActivePage] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [languageIndex, setLanguageIndex] = useState(0);
-
-  const { i18n, t } = useTranslation();
 
   const desktop = useMediaQuery("(min-width: 1171px)");
   const tablet = useMediaQuery("(min-width: 769px) and (max-width: 1170px)");
   const mobile = useMediaQuery("(max-width: 768px)");
+
+  useEffect(() => {
+    const currentPage = navData.findIndex(
+      (page) => page.url === location.pathname
+    );
+    setActivePage(currentPage);
+  }, [location.pathname]);
 
   useEffect(() => {
     const currentLangIndex = languageData.findIndex(
@@ -29,10 +38,6 @@ export const Header = () => {
     );
     setLanguageIndex(currentLangIndex);
   }, [i18n.language]);
-
-  const handleNavItemClick = (index: number) => {
-    setActivePage(index);
-  };
 
   const toggleMobileHeader = () => {
     setIsOpen(!isOpen);
@@ -85,10 +90,10 @@ export const Header = () => {
                       <DotInfoLine
                         data={[
                           {
-                            content: t("organization"),
+                            content: "organization",
                             color: "light",
                           },
-                          { content: t("admin"), color: "light" },
+                          { content: "admin", color: "light" },
                         ]}
                         gap={6}
                       />
@@ -109,7 +114,6 @@ export const Header = () => {
                   icon={icon}
                   url={url}
                   isActive={activePage === index}
-                  handleNavItemClick={() => handleNavItemClick(index)}
                 />
               ))}
             </ul>
