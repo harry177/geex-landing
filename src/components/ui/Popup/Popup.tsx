@@ -1,11 +1,6 @@
-import { ReactNode, useEffect } from "react";
+import { useEffect } from "react";
+import { PopupProps } from "../types";
 import "./popup.scss";
-
-interface PopupProps {
-  isOpen: boolean;
-  children: ReactNode;
-  onClose: () => void;
-}
 
 export const Popup = ({ isOpen, children, onClose }: PopupProps) => {
   useEffect(() => {

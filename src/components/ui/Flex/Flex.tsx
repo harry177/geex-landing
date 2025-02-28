@@ -1,20 +1,5 @@
-import { ReactNode } from "react";
+import { FlexProps } from "../types";
 import "./flex.scss";
-
-interface FlexProps {
-  column?: boolean;
-  justify?:
-    | "flex-start"
-    | "center"
-    | "flex-end"
-    | "space-between"
-    | "space-around"
-    | "space-evenly";
-  align?: "flex-start" | "center" | "flex-end";
-  gap?: string;
-  className?: string;
-  children?: ReactNode;
-}
 
 export const Flex = ({
   column,

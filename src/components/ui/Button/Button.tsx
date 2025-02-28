@@ -1,14 +1,5 @@
-import { ReactNode } from "react";
+import { ButtonProps } from "../types";
 import "./button.scss";
-
-interface ButtonProps {
-  variant: "primary" | "secondary";
-  thin?: boolean;
-  icon?: string;
-  className?: string;
-  children?: ReactNode;
-  onClick?: () => void;
-}
 
 export const Button = ({
   variant,

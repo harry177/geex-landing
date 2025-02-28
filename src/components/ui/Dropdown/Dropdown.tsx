@@ -1,18 +1,7 @@
-import { useState, useRef, useEffect, ReactNode } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { DropdownProps } from "../types";
 import "./dropdown.scss";
-
-interface DropdownProps {
-  label?: string;
-  items: { section: string; icon?: (color: string) => ReactNode }[];
-  width?: string;
-  dispatchedContent?: boolean;
-  menuHeader?: boolean;
-  children?: ReactNode;
-  rootClassName?: string;
-  menuClassName?: string;
-  itemClassName?: string;
-}
 
 export const Dropdown = ({
   label,

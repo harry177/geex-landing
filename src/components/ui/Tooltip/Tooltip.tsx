@@ -1,11 +1,6 @@
-import { ReactNode, useState } from "react";
+import { useState } from "react";
+import { TooltipProps } from "../types";
 import "./tooltip.scss";
-
-interface TooltipProps {
-  content: ReactNode;
-  children: ReactNode;
-  positionClassname: string;
-}
 
 export const Tooltip = ({
   content,

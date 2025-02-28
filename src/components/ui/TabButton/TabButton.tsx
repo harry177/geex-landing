@@ -1,12 +1,5 @@
+import { TabButtonProps } from "../types";
 import "./tab-button.scss";
-
-interface TabButton {
-  className?: string;
-  name?: string;
-  amount?: number;
-  isActive?: boolean;
-  onClick?: () => void;
-}
 
 export const TabButton = ({
   className,
@@ -14,7 +7,7 @@ export const TabButton = ({
   amount,
   isActive,
   onClick,
-}: TabButton) => {
+}: TabButtonProps) => {
   return (
     <button
       className={`tab-button ${className} ${

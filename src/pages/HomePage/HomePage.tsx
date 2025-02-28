@@ -1,19 +1,19 @@
 import { useState } from "react";
-import { ProfileSection } from "../../components/sections/ProfileSection/ProfileSection";
-import { RatingSection } from "../../components/sections/RatingSection/RatingSection";
-import { ManagementSection } from "../../components/sections/ManagementSection/ManagementSection";
-import { CompetitionSection } from "../../components/sections/CompetitionSection/CompetitionSection";
-import { ResultSection } from "../../components/sections/ResultSection/ResultSection";
-import { NewsSection } from "../../components/sections/NewsSection/NewsSection";
-import { SportsmenSection } from "../../components/sections/SpotsmenSection/SportsmenSection";
-import { TrainerSection } from "../../components/sections/TrainerSection/TrainerSection";
-import { MediaSectionFrame } from "../../components/MediaSectionFrame/MediaSectionFrame";
-import { PROFILE_TAB_KEYS } from "../../components/sections/ProfileSection/constants";
+import { ProfileSection } from "../../components/pages/organization/sections/ProfileSection/ProfileSection";
+import { RatingSection } from "../../components/pages/organization/sections/RatingSection/RatingSection";
+import { ManagementSection } from "../../components/pages/organization/sections/ManagementSection/ManagementSection";
+import { CompetitionSection } from "../../components/pages/organization/sections/CompetitionSection/CompetitionSection";
+import { ResultSection } from "../../components/pages/organization/sections/ResultSection/ResultSection";
+import { NewsSection } from "../../components/pages/organization/sections/NewsSection/NewsSection";
+import { SportsmenSection } from "../../components/pages/organization/sections/SpotsmenSection/SportsmenSection";
+import { TrainerSection } from "../../components/pages/organization/sections/TrainerSection/TrainerSection";
+import { MediaSectionFrame } from "../../components/pages/organization/MediaSectionFrame/MediaSectionFrame";
+import { PROFILE_TAB_KEYS } from "../../components/pages/organization/sections/ProfileSection/constants";
 import "./home-page.scss";
 
 export const HomePage = () => {
   const [activeTab, setActiveTab] = useState(PROFILE_TAB_KEYS.COMPETITIONS);
-  
+
   const handleTabChange = (tabName: string) => {
     setActiveTab(tabName);
   };
@@ -23,7 +23,9 @@ export const HomePage = () => {
       <div className="content">
         <div className="content-main">
           <ProfileSection onTabChange={handleTabChange} />
-          {activeTab === PROFILE_TAB_KEYS.COMPETITIONS && <CompetitionSection />}
+          {activeTab === PROFILE_TAB_KEYS.COMPETITIONS && (
+            <CompetitionSection />
+          )}
           {activeTab === PROFILE_TAB_KEYS.RESULTS && <ResultSection />}
           {activeTab === PROFILE_TAB_KEYS.NEWS && <NewsSection />}
           <MediaSectionFrame />

@@ -1,25 +1,6 @@
+import { badgeClassMap, sizeClassMap } from "./data";
+import { AvatarProps } from "../types";
 import "./avatar.scss";
-
-interface AvatarProps {
-  image: string;
-  size?: "small" | "medium" | "big" | "xl";
-  range?: boolean;
-  badge?: "gold" | "silver" | "bronze" | "flag";
-}
-
-const badgeClassMap = {
-  gold: "avatar__medal-gold",
-  silver: "avatar__medal-silver",
-  bronze: "avatar__medal-bronze",
-  flag: "avatar__badge-flag"
-};
-
-const sizeClassMap = {
-  small: "avatar-small",
-  xl: "avatar-xl",
-  medium: "avatar-medium",
-  big: "avatar-big",
-};
 
 export const Avatar = ({ image, size, range, badge }: AvatarProps) => {
   const avatarClassName = `${sizeClassMap[size || "big"]} ${

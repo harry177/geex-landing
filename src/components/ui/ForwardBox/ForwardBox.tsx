@@ -1,12 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { ForwardBoxProps } from "../types";
 import "./forward-box.scss";
-
-interface ForwardBoxProps {
-  name: string;
-  url: string;
-  className?: string;
-}
 
 export const ForwardBox = ({ name, url, className }: ForwardBoxProps) => {
   const { t } = useTranslation();
