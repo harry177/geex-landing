@@ -1,10 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "../../../hooks/useMediaQuery";
-import { CompetitionArticleProps } from "../../pages/organization/sections/CompetitionSection/data";
 import { Avatar } from "../../ui/Avatar/Avatar";
 import { Button } from "../../ui/Button/Button";
 import { DotInfoLine } from "../../ui/DotInfoLine/DotInfoLine";
 import { Flex } from "../../ui/Flex/Flex";
+import { CompetitionArticleProps } from "../types";
 import "./competition-article.scss";
 
 export const CompetitionArticle = ({
