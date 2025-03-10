@@ -53,6 +53,7 @@ export const HeaderMobileSection = ({
         <div className="chevron-box">
           <img
             src={`${isOpen ? "chevron-up.svg" : "chevron-down.svg"}`}
+            alt="Chevron icon"
             onClick={toggleSectionContent}
           ></img>
         </div>

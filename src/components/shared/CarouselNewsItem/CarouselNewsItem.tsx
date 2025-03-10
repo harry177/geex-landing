@@ -6,6 +6,7 @@ import "./carousel-news-item.scss";
 
 export const CarouselNewsItem = ({
   image,
+  imageAlt,
   title,
   company,
 }: CarouselDataTypes) => {
@@ -16,6 +17,7 @@ export const CarouselNewsItem = ({
       <Flex>
         <img
           src={company?.image}
+          alt="Organization logo"
           className="carousel-item__company-image"
         ></img>
         <Flex column className="gap-3">
@@ -29,7 +31,7 @@ export const CarouselNewsItem = ({
       </Flex>
       <div className="carousel__news-item__title-box">{title && t(title)}</div>
       <div>
-        <img src={image} className="carousel__news-item__image"></img>
+        <img src={image} alt={imageAlt} loading="lazy" className="carousel__news-item__image"></img>
       </div>
       <DotInfoLine
         data={[

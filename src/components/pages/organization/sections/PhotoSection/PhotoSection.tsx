@@ -9,7 +9,7 @@ export const PhotoSection = () => {
       <Flex column className="gap-20">
         <div className="grid-container">
           {photoData.map((photo, index) => (
-            <img key={index} className="grid-item" src={photo}></img>
+            <img key={index} src={photo} alt="Photo of sport activity" loading="lazy" className="grid-item"></img>
           ))}
         </div>
         <Flex justify="flex-end">

@@ -15,7 +15,7 @@ export const HeaderDrops = () => {
       />
       <Flex align="center" className="gap-20">
         <Flex className="header-bell">
-          <img src="bell-icon.svg" />
+          <img src="bell-icon.svg" alt="Bell icon"/>
         </Flex>
         <Dropdown
           label="Александр Магомедов"

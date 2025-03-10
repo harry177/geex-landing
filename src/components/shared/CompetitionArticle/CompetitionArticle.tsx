@@ -22,7 +22,7 @@ export const CompetitionArticle = ({
     <Flex column className="gap-20">
       <p className="article-section__title">{t(periodTitle)}</p>
       <Flex column={mobile} className="gap-12">
-        <img src={image} className="comp-article__image"></img>
+        <img src={image} loading="lazy" className="comp-article__image"></img>
         <Flex column className="gap-11">
           <Flex justify="space-between" align="flex-start">
             <DotInfoLine data={lineData} gap={12} />

@@ -3,6 +3,7 @@ import { CarouselDataTypes } from "../../../../ui/types";
 export const carouselStreamData: CarouselDataTypes[] = [
   {
     image: "carousel-image.jpg",
+    imageAlt: "Wrestling championship",
     title: "stream_section.data.1.title",
     banner: "current",
     company: {
@@ -14,6 +15,7 @@ export const carouselStreamData: CarouselDataTypes[] = [
   },
   {
     image: "carousel-image.jpg",
+    imageAlt: "Wrestling championship",
     title: "stream_section.data.2.title",
     banner: "paid",
     company: {
@@ -25,6 +27,7 @@ export const carouselStreamData: CarouselDataTypes[] = [
   },
   {
     image: "carousel-image.jpg",
+    imageAlt: "Grappling women",
     title: "stream_section.data.3.title",
     company: {
       image: "profile-logo.png",

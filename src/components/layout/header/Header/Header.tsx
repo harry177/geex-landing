@@ -70,7 +70,7 @@ export const Header = () => {
                   <Avatar image="users/main-user.png" />
                   <p>Александр Магомедов</p>
                   <Flex className="header-bell">
-                    <img src="bell-icon.svg" />
+                    <img src="bell-icon.svg" alt="Bell icon"/>
                   </Flex>
                 </HeaderMobileSection>
                 <HeaderMobileSection category="lang" items={languageData}>
@@ -81,6 +81,7 @@ export const Header = () => {
                   <Flex>
                     <img
                       src={"profile-logo.png"}
+                      alt="Profile logo"
                       className="carousel-item__company-image"
                     ></img>
                     <Flex column>

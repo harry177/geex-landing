@@ -6,6 +6,7 @@ import "./carousel-stream-item.scss";
 
 export const CarouselStreamItem = ({
   image,
+  imageAlt,
   title,
   banner,
   company,
@@ -15,7 +16,7 @@ export const CarouselStreamItem = ({
   return (
     <article className="carousel__stream-item gap-14">
       <div>
-        <img src={image} className="carousel-item__image"></img>
+        <img src={image} alt={imageAlt} loading="lazy" className="carousel-item__image"></img>
         {banner && (
           <Flex
             justify="center"

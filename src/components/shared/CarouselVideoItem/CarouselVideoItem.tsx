@@ -5,6 +5,7 @@ import "./carousel-video-item.scss";
 
 export const CarouselVideoItem = ({
   image,
+  imageAlt,
   bannerDetails,
 }: CarouselDataTypes) => {
   const { t } = useTranslation();
@@ -15,6 +16,8 @@ export const CarouselVideoItem = ({
         <div className="carousel__video-image__wrapper">
           <img
             src={image}
+            alt={imageAlt}
+            loading="lazy"
             className="carousel-item__image carousel__video-image"
           ></img>
         </div>

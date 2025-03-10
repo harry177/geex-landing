@@ -18,6 +18,7 @@ export interface ButtonProps {
 
 export interface CarouselDataTypes {
   image: string;
+  imageAlt: string;
   title?: string;
   banner?: string;
   bannerDetails?: {

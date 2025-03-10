@@ -10,10 +10,10 @@ export const Avatar = ({ image, size, range, badge }: AvatarProps) => {
   return (
     <>
       {range ? (
-        <img src={image} alt="User avatar" className={avatarClassName} />
+        <img src={image} alt="Person avatar" className={avatarClassName} />
       ) : (
         <div className={badgeClassMap[badge as keyof typeof badgeClassMap]}>
-          <img src={image} alt="User avatar" className={avatarClassName} />
+          <img src={image} alt="Person avatar" className={avatarClassName} />
         </div>
       )}
     </>
