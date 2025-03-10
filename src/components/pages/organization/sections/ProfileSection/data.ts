@@ -31,3 +31,9 @@ export const profileMembers: InfoLineTypes[] = [
     amountColor: true,
   },
 ];
+
+export const profileMedals = [
+  { medal: "gold", amount: 12 },
+  { medal: "silver", amount: 4 },
+  { medal: "bronze", amount: 19 },
+];

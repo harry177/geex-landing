@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "../../../../../hooks/useMediaQuery";
+import { MedalBox } from "../../../../shared/MedalBox/MedalBox";
 import { Avatar } from "../../../../ui/Avatar/Avatar";
 import { Button } from "../../../../ui/Button/Button";
 import { Flex } from "../../../../ui/Flex/Flex";
@@ -11,7 +12,7 @@ import { Popup } from "../../../../ui/Popup/Popup";
 import { ProfilePopup } from "../../popups/ProfilePopup/ProfilePopup";
 import { CheckmarkContent } from "../../tooltips/CheckmarkContent/CheckmarkContent";
 import { RatingBoxContent } from "../../tooltips/RatingBoxContent/RatingBoxContent";
-import { profileInfoLine, profileMembers } from "./data";
+import { profileInfoLine, profileMedals, profileMembers } from "./data";
 import { PROFILE_TAB_KEYS } from "./constants";
 import { ProfileSectionProps } from "../../types";
 import "./profile-section.scss";
@@ -85,30 +86,9 @@ export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {
             <DotInfoLine data={profileMembers} gap={6} />
           </Flex>
           <Flex gap="8px" className="profile__medal-container">
-            <Flex
-              justify="space-evenly"
-              align="center"
-              className="profile__medal-container__section"
-            >
-              <div className="profile-medal medal-gold"></div>
-              <p className="profile__medal-number">12</p>
-            </Flex>
-            <Flex
-              justify="space-evenly"
-              align="center"
-              className="profile__medal-container__section"
-            >
-              <div className="profile-medal medal-silver"></div>
-              <p className="profile__medal-number">4</p>
-            </Flex>
-            <Flex
-              justify="space-evenly"
-              align="center"
-              className="profile__medal-container__section"
-            >
-              <div className="profile-medal medal-bronze"></div>
-              <p className="profile__medal-number">19</p>
-            </Flex>
+            {profileMedals.map((item, index) => (
+              <MedalBox key={index} medal={item.medal} amount={item.amount}/>
+            ))}
           </Flex>
         </Flex>
         <Flex gap="10px" className="profile__button-container">

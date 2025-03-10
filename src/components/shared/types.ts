@@ -11,6 +11,11 @@ export interface CompetitionArticleProps {
   };
 }
 
+export interface MedalBoxProps {
+  medal: string;
+  amount: number;
+}
+
 export interface PersonItemProps {
   name: string;
   position: string;
