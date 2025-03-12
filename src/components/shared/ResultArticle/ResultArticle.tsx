@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { ResultRow } from "../ResultRow/ResultRow";
-import { DotInfoLine } from "../../ui/DotInfoLine/DotInfoLine";
-import { Flex } from "../../ui/Flex/Flex";
+import { ResultRow } from "@/components/shared/ResultRow/ResultRow";
+import { DotInfoLine } from "@/components/ui/DotInfoLine/DotInfoLine";
+import { Flex } from "@/components/ui/Flex/Flex";
 import { ResultArticleProps } from "../types";
 import "./result-article.scss";
 

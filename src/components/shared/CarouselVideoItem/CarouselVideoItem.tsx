@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { Flex } from "../../ui/Flex/Flex";
-import { CarouselDataTypes } from "../../ui/types";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { CarouselDataTypes } from "@/components/ui/types";
 import "./carousel-video-item.scss";
 
 export const CarouselVideoItem = ({

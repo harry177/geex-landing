@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Avatar } from "../../ui/Avatar/Avatar";
-import { Flex } from "../../ui/Flex/Flex";
+import { Avatar } from "@/components/ui/Avatar/Avatar";
+import { Flex } from "@/components/ui/Flex/Flex";
 import { PersonItemProps } from "../types";
 import "./person-item.scss";
 

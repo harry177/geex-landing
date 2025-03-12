@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { Carousel } from "../../../../ui/Carousel/Carousel";
-import { Flex } from "../../../../ui/Flex/Flex";
-import { ForwardBox } from "../../../../ui/ForwardBox/ForwardBox";
+import { Carousel } from "@/components/ui/Carousel/Carousel";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { ForwardBox } from "@/components/ui/ForwardBox/ForwardBox";
 import { carouselNewsData } from "./data";
 
 export const NewsSection = () => {

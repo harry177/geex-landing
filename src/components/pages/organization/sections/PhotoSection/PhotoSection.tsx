@@ -1,5 +1,5 @@
-import { Flex } from "../../../../ui/Flex/Flex";
-import { ForwardBox } from "../../../../ui/ForwardBox/ForwardBox";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { ForwardBox } from "@/components/ui/ForwardBox/ForwardBox";
 import { photoData } from "./data";
 import "./photo-section.scss";
 

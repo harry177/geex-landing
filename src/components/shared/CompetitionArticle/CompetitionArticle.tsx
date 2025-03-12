@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "../../../hooks/useMediaQuery";
-import { Avatar } from "../../ui/Avatar/Avatar";
-import { Button } from "../../ui/Button/Button";
-import { DotInfoLine } from "../../ui/DotInfoLine/DotInfoLine";
-import { Flex } from "../../ui/Flex/Flex";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { Avatar } from "@/components/ui/Avatar/Avatar";
+import { Button } from "@/components/ui/Button/Button";
+import { DotInfoLine } from "@/components/ui/DotInfoLine/DotInfoLine";
+import { Flex } from "@/components/ui/Flex/Flex";
 import { CompetitionArticleProps } from "../types";
 import "./competition-article.scss";
 

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Flex } from "../../../../ui/Flex/Flex";
+import { Flex } from "@/components/ui/Flex/Flex";
 import { ratingBoxPositionData } from "./data";
 import "../tooltips.scss";
 

@@ -1,6 +1,6 @@
-import { StreamSection } from "../sections/StreamSection/StreamSection";
-import { PhotoSection } from "../sections/PhotoSection/PhotoSection";
-import { VideoSection } from "../sections/VideoSection/VideoSection";
+import { StreamSection } from "@/components/pages/organization/sections/StreamSection/StreamSection";
+import { PhotoSection } from "@/components/pages/organization/sections/PhotoSection/PhotoSection";
+import { VideoSection } from "@/components/pages/organization/sections/VideoSection/VideoSection";
 
 export const mediaTabs = [
     {

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "../../../../../hooks/useMediaQuery";
-import { Flex } from "../../../../ui/Flex/Flex";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { Flex } from "@/components/ui/Flex/Flex";
 import { profilePopupData } from "./data";
 import "./profile-popup.scss";
 

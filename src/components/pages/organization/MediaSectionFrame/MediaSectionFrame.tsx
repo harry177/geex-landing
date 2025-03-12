@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "../../../../hooks/useMediaQuery";
-import { Flex } from "../../../ui/Flex/Flex";
-import { TabButton } from "../../../ui/TabButton/TabButton";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { TabButton } from "@/components/ui/TabButton/TabButton";
 import { mediaTabs } from "./data";
 
 export const MediaSectionFrame = () => {

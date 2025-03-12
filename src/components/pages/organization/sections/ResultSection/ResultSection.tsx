@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { ResultArticle } from "../../../../shared/ResultArticle/ResultArticle";
-import { Flex } from "../../../../ui/Flex/Flex";
+import { ResultArticle } from "@/components/shared/ResultArticle/ResultArticle";
+import { Flex } from "@/components/ui/Flex/Flex";
 import { resultData } from "./data";
 
 export const ResultSection = () => {

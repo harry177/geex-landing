@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { DotInfoLine } from "../../ui/DotInfoLine/DotInfoLine";
-import { Flex } from "../../ui/Flex/Flex";
-import { CarouselDataTypes } from "../../ui/types";
+import { DotInfoLine } from "@/components/ui/DotInfoLine/DotInfoLine";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { CarouselDataTypes } from "@/components/ui/types";
 import "./carousel-stream-item.scss";
 
 export const CarouselStreamItem = ({

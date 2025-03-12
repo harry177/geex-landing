@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HeaderNavItemProps } from "../../types";
+import { HeaderNavItemProps } from "@/components/layout/types";
 
 export const HeaderNavItem = ({
   page,

@@ -1,5 +1,5 @@
-import { CompetitionArticleProps, ResultRowProps } from "../../shared/types";
-import { InfoLineTypes } from "../../ui/types";
+import { CompetitionArticleProps, ResultRowProps } from "@/components/shared/types";
+import { InfoLineTypes } from "@/components/ui/types";
 
 export interface CompetitionMapTypes {
   "competition_section.tabs.future_data": CompetitionArticleProps[];

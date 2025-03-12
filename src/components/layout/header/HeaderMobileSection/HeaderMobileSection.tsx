@@ -2,8 +2,8 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Flex } from "../../../ui/Flex/Flex";
-import { HeaderMobileSectionProps } from "../../types";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { HeaderMobileSectionProps } from "@/components/layout/types";
 
 export const HeaderMobileSection = ({
   category,

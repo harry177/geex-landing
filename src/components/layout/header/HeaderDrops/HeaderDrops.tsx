@@ -1,7 +1,7 @@
-import { languageData, userData } from "../Header/data";
-import { Avatar } from "../../../ui/Avatar/Avatar";
-import { Dropdown } from "../../../ui/Dropdown/Dropdown";
-import { Flex } from "../../../ui/Flex/Flex";
+import { languageData, userData } from "@/components/layout/header/Header/data";
+import { Avatar } from "@/components/ui/Avatar/Avatar";
+import { Dropdown } from "@/components/ui/Dropdown/Dropdown";
+import { Flex } from "@/components/ui/Flex/Flex";
 
 export const HeaderDrops = () => {
   return (

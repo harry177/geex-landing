@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { Avatar } from "../../ui/Avatar/Avatar";
-import { Flex } from "../../ui/Flex/Flex";
+import { Avatar } from "@/components/ui/Avatar/Avatar";
+import { Flex } from "@/components/ui/Flex/Flex";
 import { WinnerItemProps } from "../types";
 import "./winner-item.scss";
 

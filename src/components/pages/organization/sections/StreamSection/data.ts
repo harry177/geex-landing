@@ -1,4 +1,4 @@
-import { CarouselDataTypes } from "../../../../ui/types";
+import { CarouselDataTypes } from "@/components/ui/types";
 
 export const carouselStreamData: CarouselDataTypes[] = [
   {

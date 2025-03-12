@@ -1,4 +1,4 @@
-import { ResultDataProps } from "../../types";
+import { ResultDataProps } from "@/components/pages/organization/types";
 
 export const resultData: ResultDataProps[] = [
   {

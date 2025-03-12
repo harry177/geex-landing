@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Flex } from "../../../ui/Flex/Flex";
-import { FooterPageSectionProps } from "../../types";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { FooterPageSectionProps } from "@/components/layout/types";
 
 export const FooterPageSection = ({
   title,

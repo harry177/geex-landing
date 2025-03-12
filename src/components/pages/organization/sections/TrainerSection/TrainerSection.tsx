@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import { PersonItem } from "../../../../shared/PersonItem/PersonItem";
-import { Flex } from "../../../../ui/Flex/Flex";
-import { ForwardBox } from "../../../../ui/ForwardBox/ForwardBox";
-import { WinnerItem } from "../../../../shared/WinnerItem/WinnerItem";
+import { PersonItem } from "@/components/shared/PersonItem/PersonItem";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { ForwardBox } from "@/components/ui/ForwardBox/ForwardBox";
+import { WinnerItem } from "@/components/shared/WinnerItem/WinnerItem";
 import { trainerData } from "./data";
 import "./trainer-section.scss";
 

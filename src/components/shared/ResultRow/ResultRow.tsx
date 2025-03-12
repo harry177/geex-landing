@@ -1,5 +1,5 @@
-import { Avatar } from "../../ui/Avatar/Avatar";
-import { Flex } from "../../ui/Flex/Flex";
+import { Avatar } from "@/components/ui/Avatar/Avatar";
+import { Flex } from "@/components/ui/Flex/Flex";
 import { ResultRowProps } from "../types";
 import "./result-row.scss";
 

@@ -1,4 +1,4 @@
-import { Flex } from "../../ui/Flex/Flex";
+import { Flex } from "@/components/ui/Flex/Flex";
 import { medalClassMap } from "./data";
 import { MedalBoxProps } from "../types";
 

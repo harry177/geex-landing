@@ -1,5 +1,5 @@
-import { Carousel } from "../../../../ui/Carousel/Carousel";
-import { ForwardBox } from "../../../../ui/ForwardBox/ForwardBox";
+import { Carousel } from "@/components/ui/Carousel/Carousel";
+import { ForwardBox } from "@/components/ui/ForwardBox/ForwardBox";
 import { carouselStreamData } from "./data";
 
 export const StreamSection = () => {

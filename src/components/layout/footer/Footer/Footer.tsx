@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "../../../../hooks/useMediaQuery";
-import { FooterPageSection } from "../FooterPageSection/FooterPageSection";
-import { Logo } from "../../Logo/Logo";
-import { Flex } from "../../../ui/Flex/Flex";
-import { DotInfoLine } from "../../../ui/DotInfoLine/DotInfoLine";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { FooterPageSection } from "@/components/layout/footer/FooterPageSection/FooterPageSection";
+import { Logo } from "@/components/layout/Logo/Logo";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { DotInfoLine } from "@/components/ui/DotInfoLine/DotInfoLine";
 import { footerInfoData, footerPageData } from "./data";
 import "./footer.scss";
 

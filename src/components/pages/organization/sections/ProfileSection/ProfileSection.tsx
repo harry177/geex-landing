@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "../../../../../hooks/useMediaQuery";
-import { MedalBox } from "../../../../shared/MedalBox/MedalBox";
-import { Avatar } from "../../../../ui/Avatar/Avatar";
-import { Button } from "../../../../ui/Button/Button";
-import { Flex } from "../../../../ui/Flex/Flex";
-import { TabButton } from "../../../../ui/TabButton/TabButton";
-import { DotInfoLine } from "../../../../ui/DotInfoLine/DotInfoLine";
-import { Tooltip } from "../../../../ui/Tooltip/Tooltip";
-import { Popup } from "../../../../ui/Popup/Popup";
-import { ProfilePopup } from "../../popups/ProfilePopup/ProfilePopup";
-import { CheckmarkContent } from "../../tooltips/CheckmarkContent/CheckmarkContent";
-import { RatingBoxContent } from "../../tooltips/RatingBoxContent/RatingBoxContent";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { MedalBox } from "@/components/shared/MedalBox/MedalBox";
+import { Avatar } from "@/components/ui/Avatar/Avatar";
+import { Button } from "@/components/ui/Button/Button";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { TabButton } from "@/components/ui/TabButton/TabButton";
+import { DotInfoLine } from "@/components/ui/DotInfoLine/DotInfoLine";
+import { Tooltip } from "@/components/ui/Tooltip/Tooltip";
+import { Popup } from "@/components/ui/Popup/Popup";
+import { ProfilePopup } from "@/components/pages/organization/popups/ProfilePopup/ProfilePopup";
+import { CheckmarkContent } from "@/components/pages/organization/tooltips/CheckmarkContent/CheckmarkContent";
+import { RatingBoxContent } from "@/components/pages/organization/tooltips/RatingBoxContent/RatingBoxContent";
 import { profileInfoLine, profileMedals, profileMembers } from "./data";
 import { PROFILE_TAB_KEYS } from "./constants";
-import { ProfileSectionProps } from "../../types";
+import { ProfileSectionProps } from "@/components/pages/organization/types";
 import "./profile-section.scss";
 
 export const ProfileSection = ({ onTabChange }: ProfileSectionProps) => {

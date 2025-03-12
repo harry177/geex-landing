@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "../../../../hooks/useMediaQuery";
-import { HeaderNavItem } from "../HeaderNavItem/HeaderNavItem";
-import { HeaderDrops } from "../HeaderDrops/HeaderDrops";
-import { HeaderMobileSection } from "../HeaderMobileSection/HeaderMobileSection";
-import { Logo } from "../../Logo/Logo";
-import { Avatar } from "../../../ui/Avatar/Avatar";
-import { DotInfoLine } from "../../../ui/DotInfoLine/DotInfoLine";
-import { Flex } from "../../../ui/Flex/Flex";
-import { BurgerIcon } from "../../../../svg/BurgerIcon";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { HeaderNavItem } from "@/components/layout/header/HeaderNavItem/HeaderNavItem";
+import { HeaderDrops } from "@/components/layout/header/HeaderDrops/HeaderDrops";
+import { HeaderMobileSection } from "@/components/layout/header/HeaderMobileSection/HeaderMobileSection";
+import { Logo } from "@/components/layout/Logo/Logo";
+import { Avatar } from "@/components/ui/Avatar/Avatar";
+import { DotInfoLine } from "@/components/ui/DotInfoLine/DotInfoLine";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { BurgerIcon } from "@/svg/BurgerIcon";
 import { languageData, navData, userData } from "./data";
 import "./header.scss";
 

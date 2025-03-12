@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Flex } from "../../ui/Flex/Flex";
-import { LogoProps } from "../types";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { LogoProps } from "@/components/layout/types";
 
 export const Logo = ({ type }: LogoProps) => {
   return (

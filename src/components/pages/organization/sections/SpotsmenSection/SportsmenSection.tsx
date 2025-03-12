@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Flex } from "../../../../ui/Flex/Flex";
-import { ForwardBox } from "../../../../ui/ForwardBox/ForwardBox";
-import { TabButton } from "../../../../ui/TabButton/TabButton";
-import { PersonItem } from "../../../../shared/PersonItem/PersonItem";
-import { PersonTabButton } from "../../../../shared/PersonTabButton/PersonTabButton";
-import { WinnerItem } from "../../../../shared/WinnerItem/WinnerItem";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { ForwardBox } from "@/components/ui/ForwardBox/ForwardBox";
+import { TabButton } from "@/components/ui/TabButton/TabButton";
+import { PersonItem } from "@/components/shared/PersonItem/PersonItem";
+import { PersonTabButton } from "@/components/shared/PersonTabButton/PersonTabButton";
+import { WinnerItem } from "@/components/shared/WinnerItem/WinnerItem";
 import { sportsmenData } from "./data";
 import "./sportsmen-section.scss";
 

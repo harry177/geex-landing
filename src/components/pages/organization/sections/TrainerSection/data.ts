@@ -1,4 +1,4 @@
-import { PersonItemProps } from "../../../../shared/types";
+import { PersonItemProps } from "@/components/shared/types";
 
 export const trainerData: PersonItemProps[] = [
   {

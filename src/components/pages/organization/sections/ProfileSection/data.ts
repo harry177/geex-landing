@@ -1,4 +1,4 @@
-import { InfoLineTypes } from "../../../../ui/types";
+import { InfoLineTypes } from "@/components/ui/types";
 
 export const profileInfoLine: InfoLineTypes[] = [
   {

@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "../../../../../hooks/useMediaQuery";
-import { Flex } from "../../../../ui/Flex/Flex";
-import { TabButton } from "../../../../ui/TabButton/TabButton";
-import { CompetitionArticle } from "../../../../shared/CompetitionArticle/CompetitionArticle";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
+import { Flex } from "@/components/ui/Flex/Flex";
+import { TabButton } from "@/components/ui/TabButton/TabButton";
+import { CompetitionArticle } from "@/components/shared/CompetitionArticle/CompetitionArticle";
 import { competitionMap } from "./data";
-import { CompetitionMapTypes } from "../../types";
+import { CompetitionMapTypes } from "@/components/pages/organization/types";
 
 export const CompetitionSection = () => {
   const [activeTab, setActiveTab] = useState(

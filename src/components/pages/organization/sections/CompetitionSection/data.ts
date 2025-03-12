@@ -1,5 +1,5 @@
-import { CompetitionArticleProps } from "../../../../shared/types";
-import { CompetitionMapTypes } from "../../types";
+import { CompetitionArticleProps } from "@/components/shared/types";
+import { CompetitionMapTypes } from "@/components/pages/organization/types";
 
 export const futureDataComp: CompetitionArticleProps[] = [
   {
